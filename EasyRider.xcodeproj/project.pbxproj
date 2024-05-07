@@ -9,13 +9,22 @@
 /* Begin PBXBuildFile section */
 		EE660E472BEAB6CF00F89868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E462BEAB6CF00F89868 /* AppDelegate.swift */; };
 		EE660E492BEAB6CF00F89868 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E482BEAB6CF00F89868 /* SceneDelegate.swift */; };
-		EE660E4B2BEAB6CF00F89868 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E4A2BEAB6CF00F89868 /* ViewController.swift */; };
-		EE660E4E2BEAB6CF00F89868 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EE660E4D2BEAB6CF00F89868 /* Base */; };
 		EE660E502BEAB6D400F89868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE660E4F2BEAB6D400F89868 /* Assets.xcassets */; };
 		EE660E532BEAB6D400F89868 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = EE660E522BEAB6D400F89868 /* Base */; };
 		EE660E5E2BEAB6D500F89868 /* EasyRiderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E5D2BEAB6D500F89868 /* EasyRiderTests.swift */; };
 		EE660E682BEAB6D500F89868 /* EasyRiderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E672BEAB6D500F89868 /* EasyRiderUITests.swift */; };
 		EE660E6A2BEAB6D500F89868 /* EasyRiderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E692BEAB6D500F89868 /* EasyRiderUITestsLaunchTests.swift */; };
+		EE660E7B2BEAB83F00F89868 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE660E7A2BEAB83F00F89868 /* Colors.xcassets */; };
+		EE660E832BEAB8CA00F89868 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E822BEAB8CA00F89868 /* SplashView.swift */; };
+		EE660E852BEAB8EB00F89868 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E842BEAB8EA00F89868 /* SplashViewModel.swift */; };
+		EE660E872BEAB90600F89868 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E862BEAB90600F89868 /* SplashViewController.swift */; };
+		EE660E8C2BEAC04200F89868 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E8B2BEAC04200F89868 /* Router.swift */; };
+		EE660E8E2BEAC04900F89868 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E8D2BEAC04900F89868 /* Coordinator.swift */; };
+		EE660E912BEAC20E00F89868 /* ERCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E902BEAC20E00F89868 /* ERCoordinator.swift */; };
+		EE660E932BEAC5F500F89868 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E922BEAC5F500F89868 /* SplashCoordinator.swift */; };
+		EE660E952BEAC8DC00F89868 /* ERCoordinatorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E942BEAC8DC00F89868 /* ERCoordinatorCommand.swift */; };
+		EE660E982BEAC8F700F89868 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E972BEAC8F700F89868 /* Command.swift */; };
+		EE660E9A2BEAC95E00F89868 /* ERRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E992BEAC95E00F89868 /* ERRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +48,6 @@
 		EE660E432BEAB6CF00F89868 /* EasyRider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyRider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE660E462BEAB6CF00F89868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE660E482BEAB6CF00F89868 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE660E4A2BEAB6CF00F89868 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE660E4D2BEAB6CF00F89868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE660E4F2BEAB6D400F89868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE660E522BEAB6D400F89868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE660E542BEAB6D400F89868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +56,17 @@
 		EE660E632BEAB6D500F89868 /* EasyRiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyRiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE660E672BEAB6D500F89868 /* EasyRiderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyRiderUITests.swift; sourceTree = "<group>"; };
 		EE660E692BEAB6D500F89868 /* EasyRiderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyRiderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE660E7A2BEAB83F00F89868 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		EE660E822BEAB8CA00F89868 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		EE660E842BEAB8EA00F89868 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		EE660E862BEAB90600F89868 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		EE660E8B2BEAC04200F89868 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EE660E8D2BEAC04900F89868 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		EE660E902BEAC20E00F89868 /* ERCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCoordinator.swift; sourceTree = "<group>"; };
+		EE660E922BEAC5F500F89868 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
+		EE660E942BEAC8DC00F89868 /* ERCoordinatorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCoordinatorCommand.swift; sourceTree = "<group>"; };
+		EE660E972BEAC8F700F89868 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		EE660E992BEAC95E00F89868 /* ERRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				EE660E452BEAB6CF00F89868 /* EasyRider */,
+				EE660E892BEABF4B00F89868 /* Utilities */,
+				EE660E772BEAB80900F89868 /* Resources */,
 				EE660E5C2BEAB6D500F89868 /* EasyRiderTests */,
 				EE660E662BEAB6D500F89868 /* EasyRiderUITests */,
 				EE660E442BEAB6CF00F89868 /* Products */,
@@ -99,12 +119,10 @@
 		EE660E452BEAB6CF00F89868 /* EasyRider */ = {
 			isa = PBXGroup;
 			children = (
+				EE660E8F2BEAC17900F89868 /* AppCoordinator */,
+				EE660E762BEAB80100F89868 /* Scenes */,
 				EE660E462BEAB6CF00F89868 /* AppDelegate.swift */,
 				EE660E482BEAB6CF00F89868 /* SceneDelegate.swift */,
-				EE660E4A2BEAB6CF00F89868 /* ViewController.swift */,
-				EE660E4C2BEAB6CF00F89868 /* Main.storyboard */,
-				EE660E4F2BEAB6D400F89868 /* Assets.xcassets */,
-				EE660E512BEAB6D400F89868 /* LaunchScreen.storyboard */,
 				EE660E542BEAB6D400F89868 /* Info.plist */,
 			);
 			path = EasyRider;
@@ -125,6 +143,111 @@
 				EE660E692BEAB6D500F89868 /* EasyRiderUITestsLaunchTests.swift */,
 			);
 			path = EasyRiderUITests;
+			sourceTree = "<group>";
+		};
+		EE660E762BEAB80100F89868 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EE660E7E2BEAB86100F89868 /* Splash */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EE660E772BEAB80900F89868 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE660E7D2BEAB84900F89868 /* LaunchScreen */,
+				EE660E7C2BEAB84500F89868 /* Fonts */,
+				EE660E792BEAB82500F89868 /* Localization */,
+				EE660E782BEAB82000F89868 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE660E782BEAB82000F89868 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EE660E4F2BEAB6D400F89868 /* Assets.xcassets */,
+				EE660E7A2BEAB83F00F89868 /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		EE660E792BEAB82500F89868 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		EE660E7C2BEAB84500F89868 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EE660E7D2BEAB84900F89868 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				EE660E512BEAB6D400F89868 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		EE660E7E2BEAB86100F89868 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				EE660E7F2BEAB89400F89868 /* Presentation */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		EE660E7F2BEAB89400F89868 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				EE660E822BEAB8CA00F89868 /* SplashView.swift */,
+				EE660E842BEAB8EA00F89868 /* SplashViewModel.swift */,
+				EE660E862BEAB90600F89868 /* SplashViewController.swift */,
+				EE660E922BEAC5F500F89868 /* SplashCoordinator.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		EE660E892BEABF4B00F89868 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EE660E962BEAC8EC00F89868 /* Protocols */,
+				EE660E8A2BEAC03500F89868 /* Coordinator */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EE660E8A2BEAC03500F89868 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EE660E8B2BEAC04200F89868 /* Router.swift */,
+				EE660E8D2BEAC04900F89868 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EE660E8F2BEAC17900F89868 /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EE660E992BEAC95E00F89868 /* ERRouter.swift */,
+				EE660E902BEAC20E00F89868 /* ERCoordinator.swift */,
+				EE660E942BEAC8DC00F89868 /* ERCoordinatorCommand.swift */,
+			);
+			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
+		EE660E962BEAC8EC00F89868 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EE660E972BEAC8F700F89868 /* Command.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +354,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE660E7B2BEAB83F00F89868 /* Colors.xcassets in Resources */,
 				EE660E502BEAB6D400F89868 /* Assets.xcassets in Resources */,
 				EE660E532BEAB6D400F89868 /* Base in Resources */,
-				EE660E4E2BEAB6CF00F89868 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +381,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE660E4B2BEAB6CF00F89868 /* ViewController.swift in Sources */,
+				EE660E852BEAB8EB00F89868 /* SplashViewModel.swift in Sources */,
+				EE660E912BEAC20E00F89868 /* ERCoordinator.swift in Sources */,
 				EE660E472BEAB6CF00F89868 /* AppDelegate.swift in Sources */,
+				EE660E932BEAC5F500F89868 /* SplashCoordinator.swift in Sources */,
+				EE660E872BEAB90600F89868 /* SplashViewController.swift in Sources */,
+				EE660E832BEAB8CA00F89868 /* SplashView.swift in Sources */,
+				EE660E8C2BEAC04200F89868 /* Router.swift in Sources */,
 				EE660E492BEAB6CF00F89868 /* SceneDelegate.swift in Sources */,
+				EE660E8E2BEAC04900F89868 /* Coordinator.swift in Sources */,
+				EE660E9A2BEAC95E00F89868 /* ERRouter.swift in Sources */,
+				EE660E982BEAC8F700F89868 /* Command.swift in Sources */,
+				EE660E952BEAC8DC00F89868 /* ERCoordinatorCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +429,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EE660E4C2BEAB6CF00F89868 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE660E4D2BEAB6CF00F89868 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EE660E512BEAB6D400F89868 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -447,7 +571,6 @@
 				INFOPLIST_FILE = EasyRider/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,7 +598,6 @@
 				INFOPLIST_FILE = EasyRider/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
