@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import Coordinator
 
 protocol SplashCoordinatorProtocol: Coordinator {
-    
+    func navigateToLogin()
 }
 
 final class SplashCoordinator: SplashCoordinatorProtocol {
@@ -19,8 +20,12 @@ final class SplashCoordinator: SplashCoordinatorProtocol {
     }
     
     func start() {
-        let viewModel = SplashViewModel()
+        let viewModel = SplashViewModel(coordinator: self)
         let controller = SplashViewController(viewModel: viewModel)
         router.setViewController(controller)
+    }
+    
+    func navigateToLogin() {
+        LoginCoordinator(router: router).start()
     }
 }

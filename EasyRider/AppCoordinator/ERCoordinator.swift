@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Coordinator
 
 protocol ERCoordinatorProtocol: Coordinator {
     func makeWindow(from windowScene: UIWindowScene)
@@ -47,7 +48,7 @@ final class ERCoordinator: ERCoordinatorProtocol {
     }
     
     func showTabBar() {
-        showSplash()
+//        showSplash()
     }
     
 }

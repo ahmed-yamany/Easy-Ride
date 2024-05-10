@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Coordinator
 
 class ERRouter: Router {
 
