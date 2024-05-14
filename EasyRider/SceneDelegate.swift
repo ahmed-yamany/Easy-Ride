@@ -11,15 +11,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
+                
+        let commands: [Command] = [
+            ERCoordinatorCommand(windowScene: windowScene)
+        ]
         
-        ERCoordinator.shared.makeWindow(from: windowScene)
-        
-//        let commands: [Command] = [
-//            ERCoordinatorCommand(windowScene: windowScene),
-//        ]
-//        
-//        commands.forEach {$0.execute() }
+        commands.forEach {$0.execute() }
     }
 }
-
-

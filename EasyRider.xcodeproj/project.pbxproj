@@ -29,6 +29,15 @@
 		EEB55BCB2BEEB5AA0010692E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB55BC72BEEB5AA0010692E /* LoginView.swift */; };
 		EEB55BCF2BEEB5C90010692E /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB55BCE2BEEB5C90010692E /* LoginUseCase.swift */; };
 		EEB55BD52BEEC1BC0010692E /* Coordinator in Frameworks */ = {isa = PBXBuildFile; productRef = EEB55BD42BEEC1BC0010692E /* Coordinator */; };
+		EEEE837B2BF3ADD200B5E566 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEEE83762BF3ADD200B5E566 /* Poppins-Bold.ttf */; };
+		EEEE837C2BF3ADD200B5E566 /* Font+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEE83772BF3ADD200B5E566 /* Font+Style.swift */; };
+		EEEE837D2BF3ADD200B5E566 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEEE83782BF3ADD200B5E566 /* Poppins-Regular.ttf */; };
+		EEEE837E2BF3ADD200B5E566 /* UIFont+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEE83792BF3ADD200B5E566 /* UIFont+Style.swift */; };
+		EEEE837F2BF3ADD200B5E566 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEEE837A2BF3ADD200B5E566 /* Poppins-Medium.ttf */; };
+		EEEE83822BF3B0FB00B5E566 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = EEEE83812BF3B0FB00B5E566 /* .swiftlint.yml */; };
+		EEEE83872BF3B44100B5E566 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEEE83852BF3B44100B5E566 /* Localizable.strings */; };
+		EEEE838A2BF3B49700B5E566 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = EEEE83892BF3B49700B5E566 /* swiftgen.yml */; };
+		EEEE838E2BF3B51C00B5E566 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEE838D2BF3B51C00B5E566 /* Strings+Generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,15 +58,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EE660E432BEAB6CF00F89868 /* EasyRider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyRider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE660E432BEAB6CF00F89868 /* EasyRider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = EasyRider.app; path = "/Users/ahmed-yamany/Desktop/EasyRider/build/Debug-iphoneos/EasyRider.app"; sourceTree = "<absolute>"; };
 		EE660E462BEAB6CF00F89868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE660E482BEAB6CF00F89868 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EE660E4F2BEAB6D400F89868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE660E522BEAB6D400F89868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE660E542BEAB6D400F89868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE660E592BEAB6D500F89868 /* EasyRiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyRiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE660E592BEAB6D500F89868 /* EasyRiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = EasyRiderTests.xctest; path = "/Users/ahmed-yamany/Desktop/EasyRider/build/Debug-iphoneos/EasyRider.app/PlugIns/EasyRiderTests.xctest"; sourceTree = "<absolute>"; };
 		EE660E5D2BEAB6D500F89868 /* EasyRiderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyRiderTests.swift; sourceTree = "<group>"; };
-		EE660E632BEAB6D500F89868 /* EasyRiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyRiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE660E632BEAB6D500F89868 /* EasyRiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = EasyRiderUITests.xctest; path = "/Users/ahmed-yamany/Desktop/EasyRider/build/Debug-iphoneos/EasyRiderUITests-Runner.app/PlugIns/EasyRiderUITests.xctest"; sourceTree = "<absolute>"; };
 		EE660E672BEAB6D500F89868 /* EasyRiderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyRiderUITests.swift; sourceTree = "<group>"; };
 		EE660E692BEAB6D500F89868 /* EasyRiderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyRiderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EE660E7A2BEAB83F00F89868 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -75,6 +84,18 @@
 		EEB55BC72BEEB5AA0010692E /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EEB55BCE2BEEB5C90010692E /* LoginUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
 		EEB55BD22BEEC1AD0010692E /* Coordinator */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Coordinator; path = Modules/Coordinator; sourceTree = "<group>"; };
+		EEEE83762BF3ADD200B5E566 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		EEEE83772BF3ADD200B5E566 /* Font+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+Style.swift"; sourceTree = "<group>"; };
+		EEEE83782BF3ADD200B5E566 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		EEEE83792BF3ADD200B5E566 /* UIFont+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Style.swift"; sourceTree = "<group>"; };
+		EEEE837A2BF3ADD200B5E566 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		EEEE83802BF3AF7800B5E566 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		EEEE83812BF3B0FB00B5E566 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		EEEE83842BF3B43300B5E566 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EEEE83862BF3B44100B5E566 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EEEE83882BF3B44C00B5E566 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EEEE83892BF3B49700B5E566 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		EEEE838D2BF3B51C00B5E566 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,25 +127,15 @@
 		EE660E3A2BEAB6CF00F89868 = {
 			isa = PBXGroup;
 			children = (
+				EEEE83892BF3B49700B5E566 /* swiftgen.yml */,
+				EEEE83812BF3B0FB00B5E566 /* .swiftlint.yml */,
 				EEB55BD22BEEC1AD0010692E /* Coordinator */,
 				EE660E452BEAB6CF00F89868 /* EasyRider */,
 				EE660E892BEABF4B00F89868 /* Utilities */,
 				EE660E772BEAB80900F89868 /* Resources */,
 				EE660E5C2BEAB6D500F89868 /* EasyRiderTests */,
 				EE660E662BEAB6D500F89868 /* EasyRiderUITests */,
-				EE660E442BEAB6CF00F89868 /* Products */,
-				EEB55BD32BEEC1BC0010692E /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		EE660E442BEAB6CF00F89868 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EE660E432BEAB6CF00F89868 /* EasyRider.app */,
-				EE660E592BEAB6D500F89868 /* EasyRiderTests.xctest */,
-				EE660E632BEAB6D500F89868 /* EasyRiderUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		EE660E452BEAB6CF00F89868 /* EasyRider */ = {
@@ -159,7 +170,6 @@
 		EE660E762BEAB80100F89868 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				EEB55BD12BEEBF820010692E /* New Group */,
 				EEB55BBE2BEEB5920010692E /* Login */,
 				EE660E7E2BEAB86100F89868 /* Splash */,
 			);
@@ -169,6 +179,7 @@
 		EE660E772BEAB80900F89868 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EEEE838B2BF3B4A200B5E566 /* Generated */,
 				EE660E7D2BEAB84900F89868 /* LaunchScreen */,
 				EE660E7C2BEAB84500F89868 /* Fonts */,
 				EE660E792BEAB82500F89868 /* Localization */,
@@ -189,6 +200,7 @@
 		EE660E792BEAB82500F89868 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
+				EEEE83852BF3B44100B5E566 /* Localizable.strings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -196,6 +208,12 @@
 		EE660E7C2BEAB84500F89868 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				EEEE83772BF3ADD200B5E566 /* Font+Style.swift */,
+				EEEE83792BF3ADD200B5E566 /* UIFont+Style.swift */,
+				EEEE83802BF3AF7800B5E566 /* Poppins-SemiBold.ttf */,
+				EEEE83762BF3ADD200B5E566 /* Poppins-Bold.ttf */,
+				EEEE837A2BF3ADD200B5E566 /* Poppins-Medium.ttf */,
+				EEEE83782BF3ADD200B5E566 /* Poppins-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -231,16 +249,8 @@
 			isa = PBXGroup;
 			children = (
 				EE660E962BEAC8EC00F89868 /* Protocols */,
-				EE660E8A2BEAC03500F89868 /* Coordinator */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		EE660E8A2BEAC03500F89868 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		EE660E8F2BEAC17900F89868 /* AppCoordinator */ = {
@@ -273,10 +283,10 @@
 		EEB55BC32BEEB59F0010692E /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				EEB55BC52BEEB5AA0010692E /* LoginCoordinator.swift */,
 				EEB55BC72BEEB5AA0010692E /* LoginView.swift */,
-				EEB55BC62BEEB5AA0010692E /* LoginViewController.swift */,
 				EEB55BC42BEEB5AA0010692E /* LoginViewModel.swift */,
+				EEB55BC62BEEB5AA0010692E /* LoginViewController.swift */,
+				EEB55BC52BEEB5AA0010692E /* LoginCoordinator.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -289,18 +299,12 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		EEB55BD12BEEBF820010692E /* New Group */ = {
+		EEEE838B2BF3B4A200B5E566 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				EEEE838D2BF3B51C00B5E566 /* Strings+Generated.swift */,
 			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
-		EEB55BD32BEEC1BC0010692E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
+			path = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +314,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE660E6D2BEAB6D500F89868 /* Build configuration list for PBXNativeTarget "EasyRider" */;
 			buildPhases = (
+				EEEE83832BF3B12200B5E566 /* swiftlint */,
+				EEEE838C2BF3B4CC00B5E566 /* swiftgen */,
 				EE660E3F2BEAB6CF00F89868 /* Sources */,
 				EE660E402BEAB6CF00F89868 /* Frameworks */,
 				EE660E412BEAB6CF00F89868 /* Resources */,
@@ -392,9 +398,10 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = EE660E3A2BEAB6CF00F89868;
-			productRefGroup = EE660E442BEAB6CF00F89868 /* Products */;
+			productRefGroup = EE660E3A2BEAB6CF00F89868;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -413,6 +420,12 @@
 				EE660E7B2BEAB83F00F89868 /* Colors.xcassets in Resources */,
 				EE660E502BEAB6D400F89868 /* Assets.xcassets in Resources */,
 				EE660E532BEAB6D400F89868 /* Base in Resources */,
+				EEEE83822BF3B0FB00B5E566 /* .swiftlint.yml in Resources */,
+				EEEE837F2BF3ADD200B5E566 /* Poppins-Medium.ttf in Resources */,
+				EEEE83872BF3B44100B5E566 /* Localizable.strings in Resources */,
+				EEEE837B2BF3ADD200B5E566 /* Poppins-Bold.ttf in Resources */,
+				EEEE837D2BF3ADD200B5E566 /* Poppins-Regular.ttf in Resources */,
+				EEEE838A2BF3B49700B5E566 /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +445,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EEEE83832BF3B12200B5E566 /* swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi \n";
+		};
+		EEEE838C2BF3B4CC00B5E566 /* swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = swiftgen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"swiftgen not installed\"\nfi \n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EE660E3F2BEAB6CF00F89868 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -439,6 +493,7 @@
 			files = (
 				EE660E852BEAB8EB00F89868 /* SplashViewModel.swift in Sources */,
 				EE660E912BEAC20E00F89868 /* ERCoordinator.swift in Sources */,
+				EEEE838E2BF3B51C00B5E566 /* Strings+Generated.swift in Sources */,
 				EEB55BCF2BEEB5C90010692E /* LoginUseCase.swift in Sources */,
 				EEB55BC92BEEB5AA0010692E /* LoginCoordinator.swift in Sources */,
 				EEB55BCA2BEEB5AA0010692E /* LoginViewController.swift in Sources */,
@@ -449,8 +504,10 @@
 				EE660E492BEAB6CF00F89868 /* SceneDelegate.swift in Sources */,
 				EEB55BC82BEEB5AA0010692E /* LoginViewModel.swift in Sources */,
 				EE660E9A2BEAC95E00F89868 /* ERRouter.swift in Sources */,
+				EEEE837E2BF3ADD200B5E566 /* UIFont+Style.swift in Sources */,
 				EE660E982BEAC8F700F89868 /* Command.swift in Sources */,
 				EEB55BCB2BEEB5AA0010692E /* LoginView.swift in Sources */,
+				EEEE837C2BF3ADD200B5E566 /* Font+Style.swift in Sources */,
 				EE660E952BEAC8DC00F89868 /* ERCoordinatorCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,8 +549,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				EE660E522BEAB6D400F89868 /* Base */,
+				EEEE83842BF3B43300B5E566 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EEEE83852BF3B44100B5E566 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEEE83862BF3B44100B5E566 /* en */,
+				EEEE83882BF3B44C00B5E566 /* ar */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -504,6 +571,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -536,7 +604,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -567,6 +635,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -599,7 +668,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

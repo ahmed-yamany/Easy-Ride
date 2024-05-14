@@ -16,7 +16,3 @@ struct SplashView<ViewModel: SplashViewModelProtocol>: View {
         }
     }
 }
-
-//#Preview {
-//    SplashView()
-//}

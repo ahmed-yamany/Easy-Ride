@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 protocol SplashViewModelProtocol: ObservableObject {
     func loginButtonTapped()
 }

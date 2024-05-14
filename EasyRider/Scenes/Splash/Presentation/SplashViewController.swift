@@ -30,5 +30,3 @@ final class SplashViewController<ViewModel: SplashViewModelProtocol>: UIHostingC
         viewModel.loginButtonTapped()
     }
 }
-
-
