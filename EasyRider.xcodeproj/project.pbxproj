@@ -38,6 +38,7 @@
 		EEEE83872BF3B44100B5E566 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEEE83852BF3B44100B5E566 /* Localizable.strings */; };
 		EEEE838A2BF3B49700B5E566 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = EEEE83892BF3B49700B5E566 /* swiftgen.yml */; };
 		EEEE838E2BF3B51C00B5E566 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEE838D2BF3B51C00B5E566 /* Strings+Generated.swift */; };
+		EEEE83902BF3B84C00B5E566 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEE838F2BF3B84C00B5E566 /* Assets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		EEEE83882BF3B44C00B5E566 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EEEE83892BF3B49700B5E566 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		EEEE838D2BF3B51C00B5E566 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		EEEE838F2BF3B84C00B5E566 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +304,7 @@
 		EEEE838B2BF3B4A200B5E566 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				EEEE838F2BF3B84C00B5E566 /* Assets.swift */,
 				EEEE838D2BF3B51C00B5E566 /* Strings+Generated.swift */,
 			);
 			path = Generated;
@@ -493,6 +496,7 @@
 			files = (
 				EE660E852BEAB8EB00F89868 /* SplashViewModel.swift in Sources */,
 				EE660E912BEAC20E00F89868 /* ERCoordinator.swift in Sources */,
+				EEEE83902BF3B84C00B5E566 /* Assets.swift in Sources */,
 				EEEE838E2BF3B51C00B5E566 /* Strings+Generated.swift in Sources */,
 				EEB55BCF2BEEB5C90010692E /* LoginUseCase.swift in Sources */,
 				EEB55BC92BEEB5AA0010692E /* LoginCoordinator.swift in Sources */,
