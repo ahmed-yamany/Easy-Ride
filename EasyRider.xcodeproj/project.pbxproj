@@ -59,15 +59,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EE660E432BEAB6CF00F89868 /* EasyRider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = EasyRider.app; path = "/Users/ahmed-yamany/Desktop/EasyRider/build/Debug-iphoneos/EasyRider.app"; sourceTree = "<absolute>"; };
+		3887041F2BF64AB7006A48FE /* EasyRider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyRider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		388704202BF64AB7006A48FE /* EasyRiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyRiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		388704212BF64AB7006A48FE /* EasyRiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyRiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE660E462BEAB6CF00F89868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE660E482BEAB6CF00F89868 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EE660E4F2BEAB6D400F89868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE660E522BEAB6D400F89868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE660E542BEAB6D400F89868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE660E592BEAB6D500F89868 /* EasyRiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = EasyRiderTests.xctest; path = "/Users/ahmed-yamany/Desktop/EasyRider/build/Debug-iphoneos/EasyRider.app/PlugIns/EasyRiderTests.xctest"; sourceTree = "<absolute>"; };
 		EE660E5D2BEAB6D500F89868 /* EasyRiderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyRiderTests.swift; sourceTree = "<group>"; };
-		EE660E632BEAB6D500F89868 /* EasyRiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = EasyRiderUITests.xctest; path = "/Users/ahmed-yamany/Desktop/EasyRider/build/Debug-iphoneos/EasyRiderUITests-Runner.app/PlugIns/EasyRiderUITests.xctest"; sourceTree = "<absolute>"; };
 		EE660E672BEAB6D500F89868 /* EasyRiderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyRiderUITests.swift; sourceTree = "<group>"; };
 		EE660E692BEAB6D500F89868 /* EasyRiderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyRiderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EE660E7A2BEAB83F00F89868 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -137,6 +137,9 @@
 				EE660E772BEAB80900F89868 /* Resources */,
 				EE660E5C2BEAB6D500F89868 /* EasyRiderTests */,
 				EE660E662BEAB6D500F89868 /* EasyRiderUITests */,
+				3887041F2BF64AB7006A48FE /* EasyRider.app */,
+				388704202BF64AB7006A48FE /* EasyRiderTests.xctest */,
+				388704212BF64AB7006A48FE /* EasyRiderUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -332,7 +335,7 @@
 				EEB55BD42BEEC1BC0010692E /* Coordinator */,
 			);
 			productName = EasyRider;
-			productReference = EE660E432BEAB6CF00F89868 /* EasyRider.app */;
+			productReference = 3887041F2BF64AB7006A48FE /* EasyRider.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EE660E582BEAB6D500F89868 /* EasyRiderTests */ = {
@@ -350,7 +353,7 @@
 			);
 			name = EasyRiderTests;
 			productName = EasyRiderTests;
-			productReference = EE660E592BEAB6D500F89868 /* EasyRiderTests.xctest */;
+			productReference = 388704202BF64AB7006A48FE /* EasyRiderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		EE660E622BEAB6D500F89868 /* EasyRiderUITests */ = {
@@ -368,7 +371,7 @@
 			);
 			name = EasyRiderUITests;
 			productName = EasyRiderUITests;
-			productReference = EE660E632BEAB6D500F89868 /* EasyRiderUITests.xctest */;
+			productReference = 388704212BF64AB7006A48FE /* EasyRiderUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
