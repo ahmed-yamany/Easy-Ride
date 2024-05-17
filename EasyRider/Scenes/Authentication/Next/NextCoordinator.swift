@@ -6,7 +6,9 @@
 //
 
 import Foundation
-protocol NextCoordinatorProtocol : Coordinator {
+import Coordinator
+
+protocol NextCoordinatorProtocol: Coordinator {
     func tappedButton()
 }
 class NextCoordinator: NextCoordinatorProtocol {

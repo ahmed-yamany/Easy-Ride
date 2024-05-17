@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-final class HomeViewController<ViewModel: HomeViewModelProtocol>: UIHostingController<HomeView<ViewModel>> {
+final class SignupViewController<ViewModel: SignupViewModelProtocol>: UIHostingController<SignupView<ViewModel>> {
   
   let viewModel: ViewModel
   
   init(viewModel: ViewModel) {
     self.viewModel = viewModel
-    super.init(rootView: HomeView(viewModel: viewModel))
+    super.init(rootView: SignupView(viewModel: viewModel))
   }
   
   @MainActor
@@ -21,4 +21,3 @@ final class HomeViewController<ViewModel: HomeViewModelProtocol>: UIHostingContr
     fatalError("init(coder:) has not been implemented")
   }
 }
-

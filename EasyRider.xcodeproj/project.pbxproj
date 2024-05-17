@@ -23,12 +23,21 @@
 		EE660E952BEAC8DC00F89868 /* ERCoordinatorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E942BEAC8DC00F89868 /* ERCoordinatorCommand.swift */; };
 		EE660E982BEAC8F700F89868 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E972BEAC8F700F89868 /* Command.swift */; };
 		EE660E9A2BEAC95E00F89868 /* ERRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E992BEAC95E00F89868 /* ERRouter.swift */; };
+		EEA320D52BF64ED10026B058 /* SignupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA320D02BF64ED10026B058 /* SignupCoordinator.swift */; };
+		EEA320D62BF64ED10026B058 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA320D12BF64ED10026B058 /* SignupView.swift */; };
+		EEA320D72BF64ED10026B058 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA320D22BF64ED10026B058 /* SignupViewController.swift */; };
+		EEA320D82BF64ED10026B058 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA320D32BF64ED10026B058 /* SignupViewModel.swift */; };
+		EEA320DE2BF64ED60026B058 /* NextCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA320D92BF64ED60026B058 /* NextCoordinator.swift */; };
+		EEA320DF2BF64ED60026B058 /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA320DA2BF64ED60026B058 /* NextView.swift */; };
+		EEA320E02BF64ED60026B058 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA320DB2BF64ED60026B058 /* NextViewController.swift */; };
+		EEA320E12BF64ED60026B058 /* NextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA320DC2BF64ED60026B058 /* NextViewModel.swift */; };
+		EEA320E62BF652C40026B058 /* ERTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA320E52BF652C40026B058 /* ERTextField.swift */; };
+		EEA320E82BF656450026B058 /* DropDownTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA320E72BF656450026B058 /* DropDownTextField.swift */; };
 		EEB55BC82BEEB5AA0010692E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB55BC42BEEB5AA0010692E /* LoginViewModel.swift */; };
 		EEB55BC92BEEB5AA0010692E /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB55BC52BEEB5AA0010692E /* LoginCoordinator.swift */; };
 		EEB55BCA2BEEB5AA0010692E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB55BC62BEEB5AA0010692E /* LoginViewController.swift */; };
 		EEB55BCB2BEEB5AA0010692E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB55BC72BEEB5AA0010692E /* LoginView.swift */; };
 		EEB55BCF2BEEB5C90010692E /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB55BCE2BEEB5C90010692E /* LoginUseCase.swift */; };
-		EEB55BD52BEEC1BC0010692E /* Coordinator in Frameworks */ = {isa = PBXBuildFile; productRef = EEB55BD42BEEC1BC0010692E /* Coordinator */; };
 		EEEE837B2BF3ADD200B5E566 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEEE83762BF3ADD200B5E566 /* Poppins-Bold.ttf */; };
 		EEEE837C2BF3ADD200B5E566 /* Font+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEE83772BF3ADD200B5E566 /* Font+Style.swift */; };
 		EEEE837D2BF3ADD200B5E566 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEEE83782BF3ADD200B5E566 /* Poppins-Regular.ttf */; };
@@ -39,6 +48,9 @@
 		EEEE838A2BF3B49700B5E566 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = EEEE83892BF3B49700B5E566 /* swiftgen.yml */; };
 		EEEE838E2BF3B51C00B5E566 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEE838D2BF3B51C00B5E566 /* Strings+Generated.swift */; };
 		EEEE83902BF3B84C00B5E566 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEE838F2BF3B84C00B5E566 /* Assets.swift */; };
+		EEFF6C6F2BF7FD6A00FD9906 /* TermsAndCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFF6C6E2BF7FD6A00FD9906 /* TermsAndCondition.swift */; };
+		EEFF6C722BF810A800FD9906 /* Coordinator in Resources */ = {isa = PBXBuildFile; fileRef = EEFF6C702BF810A800FD9906 /* Coordinator */; };
+		EEFF6C752BF810B700FD9906 /* Coordinator in Frameworks */ = {isa = PBXBuildFile; productRef = EEFF6C742BF810B700FD9906 /* Coordinator */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,12 +91,21 @@
 		EE660E942BEAC8DC00F89868 /* ERCoordinatorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCoordinatorCommand.swift; sourceTree = "<group>"; };
 		EE660E972BEAC8F700F89868 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		EE660E992BEAC95E00F89868 /* ERRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERRouter.swift; sourceTree = "<group>"; };
+		EEA320D02BF64ED10026B058 /* SignupCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupCoordinator.swift; sourceTree = "<group>"; };
+		EEA320D12BF64ED10026B058 /* SignupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		EEA320D22BF64ED10026B058 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		EEA320D32BF64ED10026B058 /* SignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		EEA320D92BF64ED60026B058 /* NextCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextCoordinator.swift; sourceTree = "<group>"; };
+		EEA320DA2BF64ED60026B058 /* NextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
+		EEA320DB2BF64ED60026B058 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		EEA320DC2BF64ED60026B058 /* NextViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewModel.swift; sourceTree = "<group>"; };
+		EEA320E52BF652C40026B058 /* ERTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERTextField.swift; sourceTree = "<group>"; };
+		EEA320E72BF656450026B058 /* DropDownTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTextField.swift; sourceTree = "<group>"; };
 		EEB55BC42BEEB5AA0010692E /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		EEB55BC52BEEB5AA0010692E /* LoginCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		EEB55BC62BEEB5AA0010692E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EEB55BC72BEEB5AA0010692E /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EEB55BCE2BEEB5C90010692E /* LoginUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
-		EEB55BD22BEEC1AD0010692E /* Coordinator */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Coordinator; path = Modules/Coordinator; sourceTree = "<group>"; };
 		EEEE83762BF3ADD200B5E566 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		EEEE83772BF3ADD200B5E566 /* Font+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+Style.swift"; sourceTree = "<group>"; };
 		EEEE83782BF3ADD200B5E566 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
@@ -98,6 +119,8 @@
 		EEEE83892BF3B49700B5E566 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		EEEE838D2BF3B51C00B5E566 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 		EEEE838F2BF3B84C00B5E566 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		EEFF6C6E2BF7FD6A00FD9906 /* TermsAndCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndCondition.swift; sourceTree = "<group>"; };
+		EEFF6C702BF810A800FD9906 /* Coordinator */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Coordinator; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEB55BD52BEEC1BC0010692E /* Coordinator in Frameworks */,
+				EEFF6C752BF810B700FD9906 /* Coordinator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,9 +152,9 @@
 		EE660E3A2BEAB6CF00F89868 = {
 			isa = PBXGroup;
 			children = (
+				EEFF6C712BF810A800FD9906 /* Modules */,
 				EEEE83892BF3B49700B5E566 /* swiftgen.yml */,
 				EEEE83812BF3B0FB00B5E566 /* .swiftlint.yml */,
-				EEB55BD22BEEC1AD0010692E /* Coordinator */,
 				EE660E452BEAB6CF00F89868 /* EasyRider */,
 				EE660E892BEABF4B00F89868 /* Utilities */,
 				EE660E772BEAB80900F89868 /* Resources */,
@@ -140,6 +163,7 @@
 				3887041F2BF64AB7006A48FE /* EasyRider.app */,
 				388704202BF64AB7006A48FE /* EasyRiderTests.xctest */,
 				388704212BF64AB7006A48FE /* EasyRiderUITests.xctest */,
+				EEFF6C732BF810B700FD9906 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,6 +199,7 @@
 		EE660E762BEAB80100F89868 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				EEA320E22BF64EDE0026B058 /* Authentication */,
 				EEB55BBE2BEEB5920010692E /* Login */,
 				EE660E7E2BEAB86100F89868 /* Splash */,
 			);
@@ -253,6 +278,7 @@
 		EE660E892BEABF4B00F89868 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				EEA320E32BF652AB0026B058 /* Custom Views */,
 				EE660E962BEAC8EC00F89868 /* Protocols */,
 			);
 			path = Utilities;
@@ -274,6 +300,55 @@
 				EE660E972BEAC8F700F89868 /* Command.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EEA320D42BF64ED10026B058 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				EEA320D12BF64ED10026B058 /* SignupView.swift */,
+				EEA320D32BF64ED10026B058 /* SignupViewModel.swift */,
+				EEA320D22BF64ED10026B058 /* SignupViewController.swift */,
+				EEA320D02BF64ED10026B058 /* SignupCoordinator.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		EEA320DD2BF64ED60026B058 /* Next */ = {
+			isa = PBXGroup;
+			children = (
+				EEA320D92BF64ED60026B058 /* NextCoordinator.swift */,
+				EEA320DA2BF64ED60026B058 /* NextView.swift */,
+				EEA320DB2BF64ED60026B058 /* NextViewController.swift */,
+				EEA320DC2BF64ED60026B058 /* NextViewModel.swift */,
+			);
+			path = Next;
+			sourceTree = "<group>";
+		};
+		EEA320E22BF64EDE0026B058 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				EEA320DD2BF64ED60026B058 /* Next */,
+				EEA320D42BF64ED10026B058 /* Signup */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		EEA320E32BF652AB0026B058 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				EEFF6C6D2BF7FD6400FD9906 /* Text */,
+				EEA320E42BF652B10026B058 /* TextFields */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		EEA320E42BF652B10026B058 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				EEA320E52BF652C40026B058 /* ERTextField.swift */,
+				EEA320E72BF656450026B058 /* DropDownTextField.swift */,
+			);
+			path = TextFields;
 			sourceTree = "<group>";
 		};
 		EEB55BBE2BEEB5920010692E /* Login */ = {
@@ -313,6 +388,29 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		EEFF6C6D2BF7FD6400FD9906 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				EEFF6C6E2BF7FD6A00FD9906 /* TermsAndCondition.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		EEFF6C712BF810A800FD9906 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EEFF6C702BF810A800FD9906 /* Coordinator */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EEFF6C732BF810B700FD9906 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -332,7 +430,7 @@
 			);
 			name = EasyRider;
 			packageProductDependencies = (
-				EEB55BD42BEEC1BC0010692E /* Coordinator */,
+				EEFF6C742BF810B700FD9906 /* Coordinator */,
 			);
 			productName = EasyRider;
 			productReference = 3887041F2BF64AB7006A48FE /* EasyRider.app */;
@@ -407,6 +505,8 @@
 				ar,
 			);
 			mainGroup = EE660E3A2BEAB6CF00F89868;
+			packageReferences = (
+			);
 			productRefGroup = EE660E3A2BEAB6CF00F89868;
 			projectDirPath = "";
 			projectRoot = "";
@@ -432,6 +532,7 @@
 				EEEE837B2BF3ADD200B5E566 /* Poppins-Bold.ttf in Resources */,
 				EEEE837D2BF3ADD200B5E566 /* Poppins-Regular.ttf in Resources */,
 				EEEE838A2BF3B49700B5E566 /* swiftgen.yml in Resources */,
+				EEFF6C722BF810A800FD9906 /* Coordinator in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,20 +601,31 @@
 				EE660E852BEAB8EB00F89868 /* SplashViewModel.swift in Sources */,
 				EE660E912BEAC20E00F89868 /* ERCoordinator.swift in Sources */,
 				EEEE83902BF3B84C00B5E566 /* Assets.swift in Sources */,
+				EEA320E12BF64ED60026B058 /* NextViewModel.swift in Sources */,
+				EEA320E62BF652C40026B058 /* ERTextField.swift in Sources */,
+				EEA320DE2BF64ED60026B058 /* NextCoordinator.swift in Sources */,
+				EEA320E82BF656450026B058 /* DropDownTextField.swift in Sources */,
 				EEEE838E2BF3B51C00B5E566 /* Strings+Generated.swift in Sources */,
 				EEB55BCF2BEEB5C90010692E /* LoginUseCase.swift in Sources */,
+				EEA320D82BF64ED10026B058 /* SignupViewModel.swift in Sources */,
 				EEB55BC92BEEB5AA0010692E /* LoginCoordinator.swift in Sources */,
+				EEFF6C6F2BF7FD6A00FD9906 /* TermsAndCondition.swift in Sources */,
 				EEB55BCA2BEEB5AA0010692E /* LoginViewController.swift in Sources */,
+				EEA320D72BF64ED10026B058 /* SignupViewController.swift in Sources */,
 				EE660E472BEAB6CF00F89868 /* AppDelegate.swift in Sources */,
 				EE660E932BEAC5F500F89868 /* SplashCoordinator.swift in Sources */,
 				EE660E872BEAB90600F89868 /* SplashViewController.swift in Sources */,
 				EE660E832BEAB8CA00F89868 /* SplashView.swift in Sources */,
 				EE660E492BEAB6CF00F89868 /* SceneDelegate.swift in Sources */,
 				EEB55BC82BEEB5AA0010692E /* LoginViewModel.swift in Sources */,
+				EEA320DF2BF64ED60026B058 /* NextView.swift in Sources */,
 				EE660E9A2BEAC95E00F89868 /* ERRouter.swift in Sources */,
 				EEEE837E2BF3ADD200B5E566 /* UIFont+Style.swift in Sources */,
+				EEA320E02BF64ED60026B058 /* NextViewController.swift in Sources */,
+				EEA320D62BF64ED10026B058 /* SignupView.swift in Sources */,
 				EE660E982BEAC8F700F89868 /* Command.swift in Sources */,
 				EEB55BCB2BEEB5AA0010692E /* LoginView.swift in Sources */,
+				EEA320D52BF64ED10026B058 /* SignupCoordinator.swift in Sources */,
 				EEEE837C2BF3ADD200B5E566 /* Font+Style.swift in Sources */,
 				EE660E952BEAC8DC00F89868 /* ERCoordinatorCommand.swift in Sources */,
 			);
@@ -868,7 +980,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		EEB55BD42BEEC1BC0010692E /* Coordinator */ = {
+		EEFF6C742BF810B700FD9906 /* Coordinator */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Coordinator;
 		};

@@ -35,7 +35,8 @@ final class ERCoordinator: ERCoordinatorProtocol {
     }
     
     func start() {
-        showOnboarding()
+//        showOnboarding()
+        SignupCoordinator(router: router).start()
     }
     
     func showSplash() {

@@ -6,12 +6,13 @@
 //
 
 import Foundation
+import Coordinator
 
-protocol HomeCoordinatorProtocol: Coordinator {
+protocol SignupCoordinatorProtocol: Coordinator {
   
 }
 
-final class HomeCoordinator: HomeCoordinatorProtocol {
+final class SignupCoordinator: SignupCoordinatorProtocol {
   let router: Router
   
   init(router: Router) {
