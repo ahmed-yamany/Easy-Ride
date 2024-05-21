@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E29CC2FD2BFD2B4700852935 /* SplashModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CC2FC2BFD2B4700852935 /* SplashModel.swift */; };
 		EE660E472BEAB6CF00F89868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E462BEAB6CF00F89868 /* AppDelegate.swift */; };
 		EE660E492BEAB6CF00F89868 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E482BEAB6CF00F89868 /* SceneDelegate.swift */; };
 		EE660E502BEAB6D400F89868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE660E4F2BEAB6D400F89868 /* Assets.xcassets */; };
@@ -74,6 +75,7 @@
 		3887041F2BF64AB7006A48FE /* EasyRider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyRider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		388704202BF64AB7006A48FE /* EasyRiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyRiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		388704212BF64AB7006A48FE /* EasyRiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyRiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29CC2FC2BFD2B4700852935 /* SplashModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashModel.swift; sourceTree = "<group>"; };
 		EE660E462BEAB6CF00F89868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE660E482BEAB6CF00F89868 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EE660E4F2BEAB6D400F89868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -149,6 +151,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E29CC2FB2BFD2B2D00852935 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E29CC2FC2BFD2B4700852935 /* SplashModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EE660E3A2BEAB6CF00F89868 = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +269,7 @@
 		EE660E7E2BEAB86100F89868 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				E29CC2FB2BFD2B2D00852935 /* Model */,
 				EE660E7F2BEAB89400F89868 /* Presentation */,
 			);
 			path = Splash;
@@ -609,6 +620,7 @@
 				EEB55BCF2BEEB5C90010692E /* LoginUseCase.swift in Sources */,
 				EEA320D82BF64ED10026B058 /* SignupViewModel.swift in Sources */,
 				EEB55BC92BEEB5AA0010692E /* LoginCoordinator.swift in Sources */,
+				E29CC2FD2BFD2B4700852935 /* SplashModel.swift in Sources */,
 				EEFF6C6F2BF7FD6A00FD9906 /* TermsAndCondition.swift in Sources */,
 				EEB55BCA2BEEB5AA0010692E /* LoginViewController.swift in Sources */,
 				EEA320D72BF64ED10026B058 /* SignupViewController.swift in Sources */,

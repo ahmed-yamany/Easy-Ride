@@ -35,8 +35,7 @@ final class ERCoordinator: ERCoordinatorProtocol {
     }
     
     func start() {
-//        showOnboarding()
-        SignupCoordinator(router: router).start()
+       showOnboarding()
     }
     
     func showSplash() {
@@ -44,6 +43,7 @@ final class ERCoordinator: ERCoordinatorProtocol {
     }
     
     func showOnboarding() {
+        router.navigationController.navigationBar.isHidden = true
         let coordinator = SplashCoordinator(router: router)
         coordinator.start()
     }
