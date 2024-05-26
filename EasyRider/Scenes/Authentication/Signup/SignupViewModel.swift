@@ -29,6 +29,7 @@ protocol SignupViewModelProtocol: ObservableObject {
     func signupTapped()
     func privacyTapped()
     func termsTapped()
+    func signInTapped()
 }
 
 @MainActor
@@ -43,9 +44,7 @@ final class SignupViewModel: SignupViewModelProtocol {
     }
     
     func signupTapped() {
-        //    self.homeCoordinator.signupTapped()
     }
-    
     
     func privacyTapped() {
         coordinator.navigateToPrivacy()
@@ -53,5 +52,9 @@ final class SignupViewModel: SignupViewModelProtocol {
     
     func termsTapped() {
         coordinator.navigateToTerms()
+    }
+    
+    func signInTapped() {
+        coordinator.navigateToSignIn()
     }
 }

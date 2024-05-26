@@ -10,21 +10,35 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  /// and
+  internal static let and = L10n.tr("Localizable", "and", fallback: "and")
+  /// Email
+  internal static let email = L10n.tr("Localizable", "email", fallback: "Email")
+  /// Gender
+  internal static let gender = L10n.tr("Localizable", "gender", fallback: "Gender")
+  /// Already have an account?
+  internal static let haveAccount = L10n.tr("Localizable", "haveAccount", fallback: "Already have an account?")
+  /// Name
+  internal static let name = L10n.tr("Localizable", "name", fallback: "Name")
+  /// OR
+  internal static let or = L10n.tr("Localizable", "or", fallback: "OR")
   /// Localizable.strings
   ///   EasyRider
   /// 
   ///   Created by Ahmed Yamany on 14/05/2024.
   internal static let privacy = L10n.tr("Localizable", "privacy", fallback: "privacy")
-  /// privacy policy
-  internal static let privacyPolicy = L10n.tr("Localizable", "privacyPolicy", fallback: "privacy policy")
+  /// Privacy policy
+  internal static let privacyPolicy = L10n.tr("Localizable", "privacyPolicy", fallback: "Privacy policy")
+  /// Sign In
+  internal static let signin = L10n.tr("Localizable", "signin", fallback: "Sign In")
   /// Sign Up
   internal static let signup = L10n.tr("Localizable", "signup", fallback: "Sign Up")
   /// terms
   internal static let terms = L10n.tr("Localizable", "terms", fallback: "terms")
-  /// terms and condition
-  internal static let termsAndcondition = L10n.tr("Localizable", "termsAndcondition", fallback: "terms and condition")
-  /// terms of service
-  internal static let termsOfService = L10n.tr("Localizable", "termsOfService", fallback: "terms of service")
+  /// By signing up. you agree to the 
+  internal static let termsAndCondition = L10n.tr("Localizable", "termsAndCondition", fallback: "By signing up. you agree to the ")
+  /// Terms of service
+  internal static let termsOfService = L10n.tr("Localizable", "termsOfService", fallback: "Terms of service")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

@@ -14,10 +14,9 @@ struct TermsAndCondition: View {
     let termsAction: Action
     
     var body: some View {
-        Text(attributedString)
+        Text("\(L10n.termsAndCondition) \(termsOfService) \(L10n.and) \(privacyPolicy)")
             .foregroundStyle(Asset.Colors.erContentDisabled.swiftUIColor)
             .font(.custom(size: 12, weight: .regular))
-            .frame(minHeight: 44)
             .environment(\.openURL, OpenURLAction(handler: { url in
                 if url.absoluteString.contains(L10n.privacy) {
                     privacyAction()
@@ -29,26 +28,23 @@ struct TermsAndCondition: View {
                 
                 return .discarded
             }))
+            .multilineTextAlignment(.leading)
     }
     
-    var attributedString: AttributedString {
-        var string = AttributedString(L10n.termsAndcondition)
-        
-        if let privacyRange = string.range(of: L10n.privacyPolicy) {
-            string[privacyRange].link = URL(string: L10n.privacy)
-            string[privacyRange].underlineStyle = .single
-            string[privacyRange].foregroundColor = Asset.Colors.erPrimary.color
-            string[privacyRange].font = .custom(size: 12, weight: .bold)
-        }
-        
-        if let termsRange = string.range(of: L10n.termsOfService) {
-            string[termsRange].link = URL(string: L10n.terms)
-            string[termsRange].underlineStyle = .single
-            string[termsRange].foregroundColor = Asset.Colors.erPrimary.color
-            string[termsRange].font = .custom(size: 12, weight: .bold)
-        }
-        
-        return string
+    var termsOfService: AttributedString {
+        var result = AttributedString(L10n.termsOfService)
+        result.font = .custom(size: 12, weight: .bold)
+        result.foregroundColor = Asset.Colors.erPrimary.color
+        result.link = URL(string: L10n.terms)
+        return result
+    }
+    
+    var privacyPolicy: AttributedString {
+        var result = AttributedString(L10n.privacyPolicy)
+        result.font = .custom(size: 12, weight: .bold)
+        result.foregroundColor = Asset.Colors.erPrimary.color
+        result.link = URL(string: L10n.privacy)
+        return result
     }
 }
 

@@ -7,129 +7,100 @@
 
 import SwiftUI
 
-struct ERButton: ButtonStyle {
-    @Environment(\.isEnabled) var isEnabled: Bool
-    
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .foregroundStyle(Asset.Colors.erBackground.swiftUIColor)
-            .font(.custom(size: 16, weight: .bold))
-            .frame(height: 64)
-            .frame(maxWidth: .infinity)
-            .background(backgroundColor(configuration))
-            .mask {
-                RoundedRectangle(cornerRadius: 8)
-            }
-    }
-    
-    func backgroundColor(_ configuration: Configuration) -> Color {
-        if configuration.isPressed {
-            return Asset.Colors.erContentDisabled.swiftUIColor
-        }
-        
-        if !isEnabled {
-            return Asset.Colors.erContentDisabled.swiftUIColor
-        }
-        
-        return Asset.Colors.erPrimary.swiftUIColor
-    }
-}
-
-extension ButtonStyle where Self == ERButton {
-    static var primary: Self { ERButton() }
-}
-
 struct SignupView<ViewModel: SignupViewModelProtocol>: View {
     @ObservedObject var viewModel: ViewModel
     @State private var selectedOption: String = ""
-        
-    let gender = ["Female", "Male"]
-    
+            
     var body: some View {
         ScrollView {
             VStack(spacing: 10) {
                 headerView
                 
                 VStack(spacing: 20) {
-                    ERTextField(placeholder: "Name", text: $viewModel.name)
-                    ERTextField(placeholder: "Email", text: $viewModel.email)
+                    ERTextField(placeholder: L10n.name, text: $viewModel.name)
+                    ERTextField(placeholder: L10n.email, text: $viewModel.email)
                     
-                    DropDownTextField(items: Gender.allCases, text: $viewModel.gender, placeholder: "Gender")
+                    DropDownTextField(items: Gender.allCases, text: $viewModel.gender, placeholder: L10n.gender)
                 }
                 
-                TermsAndCondition(privacyAction: viewModel.privacyTapped, termsAction: viewModel.termsTapped)
-                
-                Button  {
+                VStack(spacing: 16) {
+                    TermsAndCondition(privacyAction: viewModel.privacyTapped, termsAction: viewModel.termsTapped)
                     
-                } label: {
-                    Image(systemName: "house")
+                    Button(L10n.signup) {
+                        viewModel.signupTapped()
+                    }
+                    .buttonStyle(ERButton())
+                    
+                    ORDivider()
                 }
-                .buttonStyle(.primary)
-
                 
-                Button(L10n.signup) {
-                    viewModel.signupTapped()
+                HStack(spacing: 16) {
+                    Button {
+                        
+                    } label: {
+                        Asset.Assets.gmail.swiftUIImage
+                            .resizable()
+                    }
+                    .buttonStyle(.socialMedia)
+                    
+                    Button {
+                        
+                    } label: {
+                        Asset.Assets.facebook.swiftUIImage
+                            .resizable()
+                    }
+                    .buttonStyle(.socialMedia)
+                    
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "apple.logo")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .padding(6)
+                            .foregroundStyle(.erBackground)
+                            .background(.black)
+                            .mask {
+                                Circle()
+                            }
+                    }
+                    .buttonStyle(.socialMedia)
                 }
-                .buttonStyle(ERButton())
                 
-                Text("───────── or ─────────")
-                    .foregroundColor(.gray)
-                    .padding(.top, 15)
-                
-                HStack{
-                    Button(action: {
-                        
-                    }) {
-                        Image("gmail")
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 32, height: 32)
-                    }
-                    .frame(width: 50, height: 50)
-                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
-                    .padding(.trailing, 8)
-                    
-                    Button(action: {
-                        
-                    }) {
-                        Image("facebook")
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 32, height: 32)
-                    }
-                    .frame(width: 50, height: 50)
-                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
-                    .padding(.trailing, 8)
-                    
-                    Button(action: {
-                        
-                    }) {
-                        Image("apple")
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 32, height: 32)
-                    }
-                    .frame(width: 50, height: 50)
-                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
-                }.padding(.top, 20)
-                
-                HStack{
-                    Text("Already have an account?")
+                HStack {
+                    Text(L10n.haveAccount)
                         .foregroundColor(.gray)
-                    Button("Sign in"){
-                        
+                    
+                    Button(L10n.signin) {
+                        viewModel.signInTapped()
                     }
                     .foregroundColor(.yellow)
-                    .font(.system(size: 16, weight: .medium))
-                }.padding(.top, 20)
+                    .font(.custom(size: 16, weight: .medium))
+                }
             }
-            .padding(.horizontal, 20)
+            .padding(.horizontal, .constants.padding)
         }
-        
     }
     
     private var headerView: some View {
-        Text("Sign up")
+        Text(L10n.signup)
             .font(.system(size: 24, weight: .medium))
             .padding(.bottom, 16)
             .padding(.leading, 20)
             .frame(maxWidth: .infinity, alignment: .leading)
+    }
+}
+
+private struct ORDivider: View {
+    var body: some View {
+        Rectangle()
+            .frame(height: 1)
+            .overlay {
+                Text(L10n.or)
+                    .padding(.horizontal, 4)
+                    .background(.erBackground)
+            }
+            .foregroundStyle(.erContentDisabled)
+            .font(.custom(size: 12, weight: .medium))
     }
 }
