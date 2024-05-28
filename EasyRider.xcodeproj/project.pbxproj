@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE2132FA2C03C635007BA83C /* ERButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2132F92C03C635007BA83C /* ERButton.swift */; };
-		EE2132FC2C03D015007BA83C /* SocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2132FB2C03D015007BA83C /* SocialMediaButton.swift */; };
-		EE2132FF2C03D1E2007BA83C /* CGFloat+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2132FE2C03D1E2007BA83C /* CGFloat+Constants.swift */; };
 		1E0413C12C03B2B200618CE5 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0413C02C03B2B200618CE5 /* TabBarViewModel.swift */; };
 		1E351DB62C05224F00344A40 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E351DB52C05224F00344A40 /* TabBarView.swift */; };
 		1E351DB82C05226200344A40 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E351DB72C05226200344A40 /* TabBarViewController.swift */; };
@@ -17,6 +14,9 @@
 		1E50A4D12C027FC200981F7C /* TabBarUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E50A4D02C027FC200981F7C /* TabBarUseCase.swift */; };
 		1E50A4D32C02850000981F7C /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E50A4D22C02850000981F7C /* TabBarCoordinator.swift */; };
 		1EC97B772BFC0782004D6A22 /* TabBarItemAbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC97B762BFC0782004D6A22 /* TabBarItemAbstractFactory.swift */; };
+		EE2132FA2C03C635007BA83C /* ERButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2132F92C03C635007BA83C /* ERButton.swift */; };
+		EE2132FC2C03D015007BA83C /* SocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2132FB2C03D015007BA83C /* SocialMediaButton.swift */; };
+		EE2132FF2C03D1E2007BA83C /* CGFloat+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2132FE2C03D1E2007BA83C /* CGFloat+Constants.swift */; };
 		EE660E472BEAB6CF00F89868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E462BEAB6CF00F89868 /* AppDelegate.swift */; };
 		EE660E492BEAB6CF00F89868 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE660E482BEAB6CF00F89868 /* SceneDelegate.swift */; };
 		EE660E502BEAB6D400F89868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE660E4F2BEAB6D400F89868 /* Assets.xcassets */; };
@@ -87,9 +87,6 @@
 		1E35D66A2BFBCA730088E593 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		1E50A4D02C027FC200981F7C /* TabBarUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarUseCase.swift; sourceTree = "<group>"; };
 		1E50A4D22C02850000981F7C /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
-		1E50A4D42C028FC600981F7C /* SwiftUIModifiers */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIModifiers; path = ../SwiftUIModifiers; sourceTree = "<group>"; };
-		1E50A4D52C02903600981F7C /* SwiftUIModifiers */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIModifiers; path = ../SwiftUIModifiers; sourceTree = "<group>"; };
-		1E80C5A52BFD30E4007DDF93 /* SwiftUIModifiers */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIModifiers; path = ../SwiftUIModifiers; sourceTree = "<group>"; };
 		1EC97B762BFC0782004D6A22 /* TabBarItemAbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemAbstractFactory.swift; sourceTree = "<group>"; };
 		3887041F2BF64AB7006A48FE /* EasyRider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyRider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		388704202BF64AB7006A48FE /* EasyRiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyRiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,23 +169,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EE2132F82C03C62D007BA83C /* Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				EE2132F92C03C635007BA83C /* ERButton.swift */,
-				EE2132FB2C03D015007BA83C /* SocialMediaButton.swift */,
-			);
-			path = Buttons;
-			sourceTree = "<group>";
-		};
-		EE2132FD2C03D1D7007BA83C /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				EE2132FE2C03D1E2007BA83C /* CGFloat+Constants.swift */,
-			);
-			path = Extensions;
-	sourceTree = "<group>";
-		};
 		1E35D6682BFBC7A70088E593 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,20 +207,26 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		1E80C5A42BFD30E4007DDF93 /* Packages */ = {
+		EE2132F82C03C62D007BA83C /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				1E80C5A52BFD30E4007DDF93 /* SwiftUIModifiers */,
-				1E50A4D42C028FC600981F7C /* SwiftUIModifiers */,
-				1E50A4D52C02903600981F7C /* SwiftUIModifiers */,
+				EE2132F92C03C635007BA83C /* ERButton.swift */,
+				EE2132FB2C03D015007BA83C /* SocialMediaButton.swift */,
 			);
-			name = Packages;
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		EE2132FD2C03D1D7007BA83C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE2132FE2C03D1E2007BA83C /* CGFloat+Constants.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		EE660E3A2BEAB6CF00F89868 = {
 			isa = PBXGroup;
 			children = (
-				1E80C5A42BFD30E4007DDF93 /* Packages */,
 				EEFF6C712BF810A800FD9906 /* Modules */,
 				EEEE83892BF3B49700B5E566 /* swiftgen.yml */,
 				EEEE83812BF3B0FB00B5E566 /* .swiftlint.yml */,

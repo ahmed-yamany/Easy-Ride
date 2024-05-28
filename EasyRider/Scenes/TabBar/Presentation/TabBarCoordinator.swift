@@ -25,7 +25,7 @@ final class TabBarCoordinator: TabBarCoordinatorProtocol {
         $showHideTabBar.eraseToAnyPublisher()
     }
     
-    init(router: Router){
+    init(router: Router) {
         self.router = router
     }
     
@@ -38,11 +38,11 @@ final class TabBarCoordinator: TabBarCoordinatorProtocol {
     }
     
     func viewDidDisapear() {
-        router.navigationBarIsHidden = true
+        router.setNavigationBarHidden(true)
     }
     
     func viewWillApear() {
-        router.navigationBarIsHidden = false
+        router.setNavigationBarHidden(false)
     }
     
     func showTabBar() {
