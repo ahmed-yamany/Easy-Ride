@@ -14,23 +14,24 @@ struct DropDownTextField<Item: CustomStringConvertible>: View {
     @State private var showDropDown = false
 
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             ERTextField(placeholder: placeholder, text: .constant(text.description))
                 .overlay(alignment: .trailing) {
                     dropDownButton
                 }
             
-            if showDropDown {
-                ScrollView {
-                    LazyVStack {
-                        ForEach(items, id: \.description) { item in
-                            menuItemView(item: item)
-                        }
+            ScrollView {
+                LazyVStack {
+                    ForEach(items, id: \.description) { item in
+                        menuItemView(item: item)
                     }
                 }
-                .frame(height: 200)
-                .background(.red)
             }
+            .frame(minHeight: showDropDown ? 60 : 0)
+            .frame(maxHeight: showDropDown ? 200 : 0)
+            .background(.erBackground)
+            .shadow(radius: 3)
+            .animation(.smooth, value: showDropDown)
         }
         .animation(.none, value: showDropDown)
     }
@@ -54,7 +55,10 @@ struct DropDownTextField<Item: CustomStringConvertible>: View {
             Text(item.description)
                 .font(.custom(size: 14, weight: .medium))
                 .foregroundStyle(Asset.Colors.erContentPrimary.swiftUIColor)
+                .multilineTextAlignment(.leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
         }
+        .padding(.horizontal, .constants.padding)
     }
 }
 

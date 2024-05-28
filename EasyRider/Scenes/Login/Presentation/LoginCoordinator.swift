@@ -22,6 +22,6 @@ final class LoginCoordinator: LoginCoordinatorProtocol {
         let useCase = LoginUseCase()
         let viewModel = LoginViewModel(coordinator: self, useCase: useCase)
         let controller = LoginViewController(viewModel: viewModel)
-        router.push(controller)
+        router.setViewController(controller)
     }
 }

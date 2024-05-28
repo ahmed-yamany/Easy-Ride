@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE2132FA2C03C635007BA83C /* ERButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2132F92C03C635007BA83C /* ERButton.swift */; };
+		EE2132FC2C03D015007BA83C /* SocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2132FB2C03D015007BA83C /* SocialMediaButton.swift */; };
+		EE2132FF2C03D1E2007BA83C /* CGFloat+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2132FE2C03D1E2007BA83C /* CGFloat+Constants.swift */; };
 		1E0413C12C03B2B200618CE5 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0413C02C03B2B200618CE5 /* TabBarViewModel.swift */; };
 		1E351DB62C05224F00344A40 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E351DB52C05224F00344A40 /* TabBarView.swift */; };
 		1E351DB82C05226200344A40 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E351DB72C05226200344A40 /* TabBarViewController.swift */; };
@@ -91,6 +94,9 @@
 		3887041F2BF64AB7006A48FE /* EasyRider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyRider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		388704202BF64AB7006A48FE /* EasyRiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyRiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		388704212BF64AB7006A48FE /* EasyRiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyRiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE2132F92C03C635007BA83C /* ERButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERButton.swift; sourceTree = "<group>"; };
+		EE2132FB2C03D015007BA83C /* SocialMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaButton.swift; sourceTree = "<group>"; };
+		EE2132FE2C03D1E2007BA83C /* CGFloat+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Constants.swift"; sourceTree = "<group>"; };
 		EE660E462BEAB6CF00F89868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE660E482BEAB6CF00F89868 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EE660E4F2BEAB6D400F89868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -166,6 +172,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE2132F82C03C62D007BA83C /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				EE2132F92C03C635007BA83C /* ERButton.swift */,
+				EE2132FB2C03D015007BA83C /* SocialMediaButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		EE2132FD2C03D1D7007BA83C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE2132FE2C03D1E2007BA83C /* CGFloat+Constants.swift */,
+			);
+			path = Extensions;
+	sourceTree = "<group>";
+		};
 		1E35D6682BFBC7A70088E593 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,6 +368,7 @@
 		EE660E892BEABF4B00F89868 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				EE2132FD2C03D1D7007BA83C /* Extensions */,
 				EEA320E32BF652AB0026B058 /* Custom Views */,
 				EE660E962BEAC8EC00F89868 /* Protocols */,
 			);
@@ -403,6 +427,7 @@
 		EEA320E32BF652AB0026B058 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				EE2132F82C03C62D007BA83C /* Buttons */,
 				EEFF6C6D2BF7FD6400FD9906 /* Text */,
 				EEA320E42BF652B10026B058 /* TextFields */,
 			);
@@ -669,6 +694,8 @@
 				1E35D66B2BFBCA730088E593 /* TabBarItem.swift in Sources */,
 				EE660E912BEAC20E00F89868 /* ERCoordinator.swift in Sources */,
 				EEEE83902BF3B84C00B5E566 /* Assets.swift in Sources */,
+				EE2132FA2C03C635007BA83C /* ERButton.swift in Sources */,
+				EE2132FF2C03D1E2007BA83C /* CGFloat+Constants.swift in Sources */,
 				EEA320E12BF64ED60026B058 /* NextViewModel.swift in Sources */,
 				1E0413C12C03B2B200618CE5 /* TabBarViewModel.swift in Sources */,
 				EEA320E62BF652C40026B058 /* ERTextField.swift in Sources */,
@@ -702,6 +729,7 @@
 				EEA320D52BF64ED10026B058 /* SignupCoordinator.swift in Sources */,
 				EEEE837C2BF3ADD200B5E566 /* Font+Style.swift in Sources */,
 				EE660E952BEAC8DC00F89868 /* ERCoordinatorCommand.swift in Sources */,
+				EE2132FC2C03D015007BA83C /* SocialMediaButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,15 @@
 
 "privacy" = "privacy";
 "terms" = "terms";
-"termsAndcondition" = "terms and condition";
-"privacyPolicy" = "privacy policy";
-"termsOfService" = "terms of service";
+"termsAndCondition" = "By signing up. you agree to the ";
+"termsOfService" = "Terms of service";
+"privacyPolicy" = "Privacy policy";
+"and" = "and";
 "signup" = "Sign Up";
+"signin" = "Sign In";
+"haveAccount" = "Already have an account?";
+"name" = "Name";
+"email" = "Email";
+"gender" = "Gender";
+"or" = "OR";
+

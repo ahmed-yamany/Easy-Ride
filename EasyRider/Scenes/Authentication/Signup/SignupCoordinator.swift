@@ -11,6 +11,7 @@ import Coordinator
 protocol SignupCoordinatorProtocol: Coordinator {
     func navigateToPrivacy()
     func navigateToTerms()
+    func navigateToSignIn()
 }
 
 final class SignupCoordinator: SignupCoordinatorProtocol {
@@ -36,5 +37,9 @@ final class SignupCoordinator: SignupCoordinatorProtocol {
     
     func navigateToPrivacy() {
         
+    }
+    
+    func navigateToSignIn() {
+        LoginCoordinator(router: router).start()
     }
 }
