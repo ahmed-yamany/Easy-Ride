@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-//import SwiftUIModifiers
+
 @MainActor
 protocol TabBarItemAbstractFactory {
     func make() -> any TabBarItem
@@ -17,10 +17,21 @@ struct HomeTabBarFactory: TabBarItemAbstractFactory {
 //        let navigationContoller = UINavigationController()
 //        let router = ERRouter(navigationController: navigationContoller)
 //        let coordinator =
-        return HomeBarItem(view: AnyView(Text("Hello Home")))
+        
+        let view = ScrollView {
+            LazyVStack {
+                ForEach(0..<100, id: \.self) { index in
+                    Text("hello hello hello hello hello \(index)")
+                        .onTapGesture {
+                            print("helo \(index)")
+                        }
+                }
+            }
+        }
+        return HomeBarItem(view: AnyView(view))
     }
 }
-struct FavouriateTabBarFactory: TabBarItemAbstractFactory{
+struct FavouriateTabBarFactory: TabBarItemAbstractFactory {
     func make() -> any TabBarItem {
         return FavouriteBarItem(view: Text("Hello Favouriate").eraseToAnyView())
     }
@@ -55,7 +66,7 @@ struct TabBarItemFactory {
         
         case .home:
             return HomeTabBarFactory().make()
-        case .favouriate:
+        case .favourite:
             return FavouriateTabBarFactory().make()
         case .wallet:
             return WalletTabBarFactory().make()

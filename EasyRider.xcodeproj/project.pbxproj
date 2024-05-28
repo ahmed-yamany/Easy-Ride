@@ -172,8 +172,8 @@
 		1E35D6682BFBC7A70088E593 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				1E7F04432BFD0CFC0075DA5D /* Presentation */,
 				1E7F04422BFD0CE90075DA5D /* Domain */,
+				1E7F04432BFD0CFC0075DA5D /* Presentation */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -199,10 +199,10 @@
 		1E7F04432BFD0CFC0075DA5D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				1E50A4D22C02850000981F7C /* TabBarCoordinator.swift */,
-				1E0413C02C03B2B200618CE5 /* TabBarViewModel.swift */,
 				1E351DB52C05224F00344A40 /* TabBarView.swift */,
+				1E0413C02C03B2B200618CE5 /* TabBarViewModel.swift */,
 				1E351DB72C05226200344A40 /* TabBarViewController.swift */,
+				1E50A4D22C02850000981F7C /* TabBarCoordinator.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";

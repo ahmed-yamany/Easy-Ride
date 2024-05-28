@@ -8,6 +8,7 @@
 import Combine
 import SwiftUI
 
+@MainActor
 protocol TabBarViewModelProtocol: ObservableObject {
     var items: [any TabBarItem] { get set }
     var selectedItem: TabBarType { get set }
@@ -21,9 +22,6 @@ protocol TabBarViewModelProtocol: ObservableObject {
 
 @MainActor
 final class TabBarViewModel: TabBarViewModelProtocol {
-   
-    
-    
     @Published var items: [any TabBarItem] = []
     @Published var selectedItem: TabBarType = .home
     @Published var showTabBar: Bool = true
@@ -38,7 +36,7 @@ final class TabBarViewModel: TabBarViewModelProtocol {
         coordinator: TabBarCoordinatorProtocol,
         useCase: TabBarUseCaseProtocol,
         showTabBarPublisher: AnyPublisher<Bool, Never>
-    ){
+    ) {
         self.coordinator = coordinator
         self.useCase = useCase
         self.showTabBarPublisher = showTabBarPublisher
@@ -73,7 +71,7 @@ private extension TabBarViewModel {
         }
     }
     
-    func bindingShowTabBar(){
+    func bindingShowTabBar() {
         showTabBarCancellable = showTabBarPublisher
             .receive(on: RunLoop.main)
             .assign(to: \.showTabBar, on: self)

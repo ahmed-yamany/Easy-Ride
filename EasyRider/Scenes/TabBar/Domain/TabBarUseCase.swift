@@ -8,7 +8,7 @@
 import Foundation
 
 protocol TabBarUseCaseProtocol {
-    func getTabBarItem() async -> [any TabBarItem]
+    func getTabBarItem() async throws -> [any TabBarItem]
 }
 
 class TabBarUseCase: TabBarUseCaseProtocol {
@@ -19,13 +19,12 @@ class TabBarUseCase: TabBarUseCaseProtocol {
         self.tabBarItemsFactory = tabBarItemsFactory
     }
     
-    func getTabBarItem() async -> [any TabBarItem] {
+    func getTabBarItem() async throws -> [any TabBarItem] {
         var items: [any TabBarItem] = []
-    
+        
         for type in TabBarType.allCases {
             items.append(await tabBarItemsFactory.make(for: type))
         }
         return items
     }
-    
 }
