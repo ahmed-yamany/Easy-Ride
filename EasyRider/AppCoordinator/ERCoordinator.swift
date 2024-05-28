@@ -9,6 +9,7 @@ import UIKit
 import Coordinator
 
 protocol ERCoordinatorProtocol: Coordinator {
+    var window: UIWindow? { get set }
     func makeWindow(from windowScene: UIWindowScene)
     func showSplash()
     func showOnboarding()
@@ -36,7 +37,8 @@ final class ERCoordinator: ERCoordinatorProtocol {
     
     func start() {
 //        showOnboarding()
-        SignupCoordinator(router: router).start()
+//        SignupCoordinator(router: router).start()
+        showTabBar()
     }
     
     func showSplash() {
@@ -49,7 +51,8 @@ final class ERCoordinator: ERCoordinatorProtocol {
     }
     
     func showTabBar() {
-//        showSplash()
+        router.reset()
+        TabBarCoordinator(router: router).start()
     }
     
 }

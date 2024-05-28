@@ -48,6 +48,6 @@ struct TermsAndCondition: View {
     }
 }
 
-#Preview {
-    TermsAndCondition(privacyAction: {}, termsAction: {})
-}
+//#Preview {
+//    TermsAndCondition(privacyAction: {}, termsAction: {})
+//}

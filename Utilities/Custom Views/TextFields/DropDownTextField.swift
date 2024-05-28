@@ -33,6 +33,7 @@ struct DropDownTextField<Item: CustomStringConvertible>: View {
             .shadow(radius: 3)
             .animation(.smooth, value: showDropDown)
         }
+        .animation(.none, value: showDropDown)
     }
     
     private var dropDownButton: some View {
@@ -61,7 +62,7 @@ struct DropDownTextField<Item: CustomStringConvertible>: View {
     }
 }
 
-#Preview {
-    DropDownTextField(items: Gender.allCases, text: .constant(Gender.male), placeholder: "Gender")
-        .padding()
-}
+//#Preview {
+//    DropDownTextField(items: Gender.allCases, text: .constant(Gender.male), placeholder: "Gender")
+//        .padding()
+//}

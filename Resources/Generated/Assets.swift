@@ -28,6 +28,7 @@ internal enum Asset {
     internal static let apple = ImageAsset(name: "Apple")
     internal static let facebook = ImageAsset(name: "Facebook")
     internal static let gmail = ImageAsset(name: "Gmail")
+    internal static let house = ImageAsset(name: "_house")
   }
   internal enum Colors {
     internal static let erContentDisabled = ColorAsset(name: "er-content-disabled")
