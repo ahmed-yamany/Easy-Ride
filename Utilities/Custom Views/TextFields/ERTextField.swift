@@ -23,7 +23,7 @@ struct ERTextField: View {
     }
 }
 
-#Preview {
-    ERTextField(placeholder: "Name", text: .constant(""))
-        .padding()
-}
+//#Preview {
+//    ERTextField(placeholder: "Name", text: .constant(""))
+//        .padding()
+//}

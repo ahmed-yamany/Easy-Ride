@@ -36,7 +36,8 @@ final class ERCoordinator: ERCoordinatorProtocol {
     
     func start() {
 //        showOnboarding()
-        SignupCoordinator(router: router).start()
+//        SignupCoordinator(router: router).start()
+        showTabBar()
     }
     
     func showSplash() {
@@ -50,6 +51,9 @@ final class ERCoordinator: ERCoordinatorProtocol {
     
     func showTabBar() {
 //        showSplash()
+        let coordinator = TabBarCoordinator(router: router)
+        router.reset()
+        TabBarCoordinator(router: router).start()
     }
     
 }
