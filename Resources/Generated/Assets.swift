@@ -28,6 +28,9 @@ internal enum Asset {
     internal static let apple = ImageAsset(name: "Apple")
     internal static let facebook = ImageAsset(name: "Facebook")
     internal static let gmail = ImageAsset(name: "Gmail")
+    internal static let onBoarding1 = ImageAsset(name: "onBoarding1")
+    internal static let onBoarding2 = ImageAsset(name: "onBoarding2")
+    internal static let onBoarding3 = ImageAsset(name: "onBoarding3")
     internal static let house = ImageAsset(name: "_house")
   }
   internal enum Colors {

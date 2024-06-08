@@ -14,6 +14,7 @@
 		1E50A4D12C027FC200981F7C /* TabBarUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E50A4D02C027FC200981F7C /* TabBarUseCase.swift */; };
 		1E50A4D32C02850000981F7C /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E50A4D22C02850000981F7C /* TabBarCoordinator.swift */; };
 		1EC97B772BFC0782004D6A22 /* TabBarItemAbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC97B762BFC0782004D6A22 /* TabBarItemAbstractFactory.swift */; };
+		E29CC2FD2BFD2B4700852935 /* SplashModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CC2FC2BFD2B4700852935 /* SplashModel.swift */; };
 		EE2132FA2C03C635007BA83C /* ERButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2132F92C03C635007BA83C /* ERButton.swift */; };
 		EE2132FC2C03D015007BA83C /* SocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2132FB2C03D015007BA83C /* SocialMediaButton.swift */; };
 		EE2132FF2C03D1E2007BA83C /* CGFloat+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2132FE2C03D1E2007BA83C /* CGFloat+Constants.swift */; };
@@ -37,10 +38,6 @@
 		EEA320D62BF64ED10026B058 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA320D12BF64ED10026B058 /* SignupView.swift */; };
 		EEA320D72BF64ED10026B058 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA320D22BF64ED10026B058 /* SignupViewController.swift */; };
 		EEA320D82BF64ED10026B058 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA320D32BF64ED10026B058 /* SignupViewModel.swift */; };
-		EEA320DE2BF64ED60026B058 /* NextCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA320D92BF64ED60026B058 /* NextCoordinator.swift */; };
-		EEA320DF2BF64ED60026B058 /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA320DA2BF64ED60026B058 /* NextView.swift */; };
-		EEA320E02BF64ED60026B058 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA320DB2BF64ED60026B058 /* NextViewController.swift */; };
-		EEA320E12BF64ED60026B058 /* NextViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA320DC2BF64ED60026B058 /* NextViewModel.swift */; };
 		EEA320E62BF652C40026B058 /* ERTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA320E52BF652C40026B058 /* ERTextField.swift */; };
 		EEA320E82BF656450026B058 /* DropDownTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA320E72BF656450026B058 /* DropDownTextField.swift */; };
 		EEB55BC82BEEB5AA0010692E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB55BC42BEEB5AA0010692E /* LoginViewModel.swift */; };
@@ -48,6 +45,7 @@
 		EEB55BCA2BEEB5AA0010692E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB55BC62BEEB5AA0010692E /* LoginViewController.swift */; };
 		EEB55BCB2BEEB5AA0010692E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB55BC72BEEB5AA0010692E /* LoginView.swift */; };
 		EEB55BCF2BEEB5C90010692E /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB55BCE2BEEB5C90010692E /* LoginUseCase.swift */; };
+		EED4EAF72C14F3B4007AE1C2 /* SplashUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED4EAF62C14F3B3007AE1C2 /* SplashUseCase.swift */; };
 		EEEE837B2BF3ADD200B5E566 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEEE83762BF3ADD200B5E566 /* Poppins-Bold.ttf */; };
 		EEEE837C2BF3ADD200B5E566 /* Font+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEE83772BF3ADD200B5E566 /* Font+Style.swift */; };
 		EEEE837D2BF3ADD200B5E566 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEEE83782BF3ADD200B5E566 /* Poppins-Regular.ttf */; };
@@ -91,6 +89,7 @@
 		3887041F2BF64AB7006A48FE /* EasyRider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyRider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		388704202BF64AB7006A48FE /* EasyRiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyRiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		388704212BF64AB7006A48FE /* EasyRiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyRiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29CC2FC2BFD2B4700852935 /* SplashModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashModel.swift; sourceTree = "<group>"; };
 		EE2132F92C03C635007BA83C /* ERButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERButton.swift; sourceTree = "<group>"; };
 		EE2132FB2C03D015007BA83C /* SocialMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaButton.swift; sourceTree = "<group>"; };
 		EE2132FE2C03D1E2007BA83C /* CGFloat+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Constants.swift"; sourceTree = "<group>"; };
@@ -115,10 +114,6 @@
 		EEA320D12BF64ED10026B058 /* SignupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		EEA320D22BF64ED10026B058 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		EEA320D32BF64ED10026B058 /* SignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
-		EEA320D92BF64ED60026B058 /* NextCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextCoordinator.swift; sourceTree = "<group>"; };
-		EEA320DA2BF64ED60026B058 /* NextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
-		EEA320DB2BF64ED60026B058 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
-		EEA320DC2BF64ED60026B058 /* NextViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewModel.swift; sourceTree = "<group>"; };
 		EEA320E52BF652C40026B058 /* ERTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERTextField.swift; sourceTree = "<group>"; };
 		EEA320E72BF656450026B058 /* DropDownTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTextField.swift; sourceTree = "<group>"; };
 		EEB55BC42BEEB5AA0010692E /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -126,6 +121,7 @@
 		EEB55BC62BEEB5AA0010692E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EEB55BC72BEEB5AA0010692E /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EEB55BCE2BEEB5C90010692E /* LoginUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		EED4EAF62C14F3B3007AE1C2 /* SplashUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashUseCase.swift; sourceTree = "<group>"; };
 		EEEE83762BF3ADD200B5E566 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		EEEE83772BF3ADD200B5E566 /* Font+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+Style.swift"; sourceTree = "<group>"; };
 		EEEE83782BF3ADD200B5E566 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
@@ -207,6 +203,14 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
+		E29CC2FB2BFD2B2D00852935 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E29CC2FC2BFD2B4700852935 /* SplashModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EE2132F82C03C62D007BA83C /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,10 +278,9 @@
 		EE660E762BEAB80100F89868 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				1E35D6682BFBC7A70088E593 /* TabBar */,
-				EEA320E22BF64EDE0026B058 /* Authentication */,
-				EEB55BBE2BEEB5920010692E /* Login */,
 				EE660E7E2BEAB86100F89868 /* Splash */,
+				EEA320E22BF64EDE0026B058 /* Authentication */,
+				1E35D6682BFBC7A70088E593 /* TabBar */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -335,6 +338,8 @@
 		EE660E7E2BEAB86100F89868 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				EED4EAF52C14F3A7007AE1C2 /* Domain */,
+				E29CC2FB2BFD2B2D00852935 /* Model */,
 				EE660E7F2BEAB89400F89868 /* Presentation */,
 			);
 			path = Splash;
@@ -390,21 +395,10 @@
 			path = Signup;
 			sourceTree = "<group>";
 		};
-		EEA320DD2BF64ED60026B058 /* Next */ = {
-			isa = PBXGroup;
-			children = (
-				EEA320D92BF64ED60026B058 /* NextCoordinator.swift */,
-				EEA320DA2BF64ED60026B058 /* NextView.swift */,
-				EEA320DB2BF64ED60026B058 /* NextViewController.swift */,
-				EEA320DC2BF64ED60026B058 /* NextViewModel.swift */,
-			);
-			path = Next;
-			sourceTree = "<group>";
-		};
 		EEA320E22BF64EDE0026B058 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				EEA320DD2BF64ED60026B058 /* Next */,
+				EEB55BBE2BEEB5920010692E /* Login */,
 				EEA320D42BF64ED10026B058 /* Signup */,
 			);
 			path = Authentication;
@@ -453,6 +447,14 @@
 			isa = PBXGroup;
 			children = (
 				EEB55BCE2BEEB5C90010692E /* LoginUseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EED4EAF52C14F3A7007AE1C2 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EED4EAF62C14F3B3007AE1C2 /* SplashUseCase.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -678,14 +680,13 @@
 			files = (
 				EE660E852BEAB8EB00F89868 /* SplashViewModel.swift in Sources */,
 				1E35D66B2BFBCA730088E593 /* TabBarItem.swift in Sources */,
+				EED4EAF72C14F3B4007AE1C2 /* SplashUseCase.swift in Sources */,
 				EE660E912BEAC20E00F89868 /* ERCoordinator.swift in Sources */,
 				EEEE83902BF3B84C00B5E566 /* Assets.swift in Sources */,
 				EE2132FA2C03C635007BA83C /* ERButton.swift in Sources */,
 				EE2132FF2C03D1E2007BA83C /* CGFloat+Constants.swift in Sources */,
-				EEA320E12BF64ED60026B058 /* NextViewModel.swift in Sources */,
 				1E0413C12C03B2B200618CE5 /* TabBarViewModel.swift in Sources */,
 				EEA320E62BF652C40026B058 /* ERTextField.swift in Sources */,
-				EEA320DE2BF64ED60026B058 /* NextCoordinator.swift in Sources */,
 				EEA320E82BF656450026B058 /* DropDownTextField.swift in Sources */,
 				EEEE838E2BF3B51C00B5E566 /* Strings+Generated.swift in Sources */,
 				1E351DB82C05226200344A40 /* TabBarViewController.swift in Sources */,
@@ -693,6 +694,7 @@
 				EEB55BCF2BEEB5C90010692E /* LoginUseCase.swift in Sources */,
 				EEA320D82BF64ED10026B058 /* SignupViewModel.swift in Sources */,
 				EEB55BC92BEEB5AA0010692E /* LoginCoordinator.swift in Sources */,
+				E29CC2FD2BFD2B4700852935 /* SplashModel.swift in Sources */,
 				EEFF6C6F2BF7FD6A00FD9906 /* TermsAndCondition.swift in Sources */,
 				EEB55BCA2BEEB5AA0010692E /* LoginViewController.swift in Sources */,
 				EEA320D72BF64ED10026B058 /* SignupViewController.swift in Sources */,
@@ -705,10 +707,8 @@
 				EE660E492BEAB6CF00F89868 /* SceneDelegate.swift in Sources */,
 				1E50A4D32C02850000981F7C /* TabBarCoordinator.swift in Sources */,
 				EEB55BC82BEEB5AA0010692E /* LoginViewModel.swift in Sources */,
-				EEA320DF2BF64ED60026B058 /* NextView.swift in Sources */,
 				EE660E9A2BEAC95E00F89868 /* ERRouter.swift in Sources */,
 				EEEE837E2BF3ADD200B5E566 /* UIFont+Style.swift in Sources */,
-				EEA320E02BF64ED60026B058 /* NextViewController.swift in Sources */,
 				EEA320D62BF64ED10026B058 /* SignupView.swift in Sources */,
 				EE660E982BEAC8F700F89868 /* Command.swift in Sources */,
 				EEB55BCB2BEEB5AA0010692E /* LoginView.swift in Sources */,

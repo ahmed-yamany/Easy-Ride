@@ -11,8 +11,8 @@ import Coordinator
 protocol ERCoordinatorProtocol: Coordinator {
     var window: UIWindow? { get set }
     func makeWindow(from windowScene: UIWindowScene)
-    func showSplash()
     func showOnboarding()
+    func showAuthentication()
     func showTabBar()
 }
 
@@ -36,22 +36,24 @@ final class ERCoordinator: ERCoordinatorProtocol {
     }
     
     func start() {
-//        showOnboarding()
-//        SignupCoordinator(router: router).start()
-        showTabBar()
-    }
-    
-    func showSplash() {
-        
+       showOnboarding()
     }
     
     func showOnboarding() {
-        let coordinator = SplashCoordinator(router: router)
-        coordinator.start()
+        router.reset()
+        router.setNavigationBarHidden(true, animated: false)
+        SplashCoordinator(router: router).start()
+    }
+    
+    func showAuthentication() {
+        router.reset()
+        router.setNavigationBarHidden(false, animated: false)
+        SignupCoordinator(router: router).start()
     }
     
     func showTabBar() {
         router.reset()
+        router.setNavigationBarHidden(true, animated: false)
         TabBarCoordinator(router: router).start()
     }
     
