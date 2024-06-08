@@ -7,11 +7,8 @@
 
 import Foundation
 
-
-struct SplashModel{
-    
-    var image : String
-    var title : String
-    var descreption : String
-    
+struct SplashModel {
+    var image: String
+    var title: String
+    var descreption: String
 }

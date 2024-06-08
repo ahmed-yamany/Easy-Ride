@@ -20,7 +20,8 @@ final class SplashCoordinator: SplashCoordinatorProtocol {
     }
     
     func start() {
-        let viewModel = SplashViewModel(coordinator: self)
+        let useCase = SplashUseCase()
+        let viewModel = SplashViewModel(coordinator: self, useCase: useCase)
         let controller = SplashViewController(viewModel: viewModel)
         router.setViewController(controller)
     }

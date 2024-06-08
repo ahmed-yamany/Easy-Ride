@@ -8,108 +8,109 @@
 import SwiftUI
 
 struct SplashView<ViewModel: SplashViewModelProtocol>: View {
-    
     @ObservedObject var viewModel: ViewModel
-    @State var progressValue : Float = 1.0/3
-    @State var animationValue : Float = 300.0
-    @State var currentStep : Int = 0
-    
-    var body: some View {
-        onBoardingView
-        progressButton
-    }
-    
-    var onBoardingView:some View {
         
-        VStack{
-            HStack{
-                Spacer()
-                Button{
-                    self.currentStep = viewModel.getSplashData().count - 1
-                    self.animationValue = animationValue - 100
-                    self.progressValue = 1.0
-                }label: {
-                    Text("Skip")
-                        .padding(16)
-                        .tint(.black)
-                }
-            }
-            TabView(selection:$currentStep)
-            {
-                ForEach(0..<viewModel.getSplashData().count, id: \.self) { i in
-                    VStack{
-                        Image(viewModel.getSplashData()[i].image)
-                            .resizable()
-                            .frame(width: 350, height: 220)
-                        Text(viewModel.getSplashData()[i].title)
-                            .padding(.top,30)
-                            .padding(.bottom,15)
-                            .font(.custom(size: 24, weight: .regular))
-                        Text(viewModel.getSplashData()[i].descreption).multilineTextAlignment(.center)
-                            .font(.custom(size: 14, weight: .regular))
-                            .foregroundStyle(.erContentTertiary)
-                            .padding(.horizontal,30)
-                        
-                    }.tag(i)
-                }
-            }.animation(.easeInOut(duration: 1.0),value: animationValue)
-                .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local).onChanged({_ in }))
-                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-            
+    var body: some View {
+        VStack {
+            onBoardingView
+            Spacer()
+            progressButton
+        }
+        .animation(.easeIn(duration: 0.3), value: viewModel.currentStep)
+        .onAppear {
+            viewModel.onAppear()
         }
     }
     
-    var progressButton : some View {
-        ZStack{
-            ProgressBar(progress: self.$progressValue, value: self.$animationValue, color: Color.erPrimary)
-                .frame(width: 80, height: 80).onAppear(){
-                    progressValue = 0.35
-                }
-            Button{
-                if progressValue < 1.0 {
-                    progressValue += 1.0/3
-                    animationValue = animationValue - 100
-                    sliderAction()
-                }else{
+    var onBoardingView: some View {
+        VStack {
+            skipButton
+            tabView
+        }
+    }
+    
+    var skipButton: some View {
+        Button {
+            viewModel.skipTapped()
+        } label: {
+            Text(L10n.skip)
+                .foregroundStyle(.erContentPrimary)
+                .font(.custom(size: 16, weight: .regular))
+        }
+        .frame(maxWidth: .infinity, alignment: .trailing)
+        .padding(.horizontal, 16)
+    }
+    
+    private var tabView: some View {
+        TabView(selection: $viewModel.currentStep) {
+            ForEach(viewModel.models.indices, id: \.self) { index in
+                let model = viewModel.models[index]
+                VStack(spacing: 44 ) {
+                    Image(model.image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: 220)
                     
-                    //TODO: - Navigation
-                    progressValue = 1.0/3
-                    animationValue = animationValue + 300
-                    self.currentStep = 0
+                    VStack(spacing: 12) {
+                        Text(model.title)
+                            .multilineTextAlignment(.center)
+                            .font(.custom(size: 24, weight: .regular))
+                        
+                        Text(model.descreption)
+                            .multilineTextAlignment(.center)
+                            .font(.custom(size: 14, weight: .regular))
+                            .padding(.horizontal, 30)
+                    }
+                    .foregroundStyle(.erContentPrimary)
                 }
-            }label: {
-                Image(systemName: "arrow.right")
+                .frame(maxWidth: .infinity)
+                .padding(.horizontal, .constants.padding)
+                .tag(index)
             }
-            .frame(width: 65, height: 65, alignment: .center)
-            .background(Color(.erPrimary))
-            .tint(Color.gray)
-            .clipShape(Circle())
-            
-        }.padding(.bottom,50)
-            .padding(.top,150)
+        }
+        .tabViewStyle(.page(indexDisplayMode: .never))
     }
     
-    private func sliderAction(){
-        if self.currentStep < viewModel.getSplashData().count-1{
-            self.currentStep += 1
+    var progressButton: some View {
+        ZStack {
+            ProgressBar(value: viewModel.progressValue(), color: Color.erPrimary)
+                .frame(width: 80, height: 80)
+            
+            Button {
+                viewModel.nextTapped()
+            } label: {
+                Image(systemName: "arrow.right")
+                    .frame(width: 65, height: 65, alignment: .center)
+                    .background(Color(.erPrimary))
+                    .tint(Color.gray)
+                    .clipShape(Circle())
+            }
         }
+        .padding(.bottom, 50)
+        .padding(.top, 150)
     }
 }
 
-struct ProgressBar :View {
-    @Binding var progress : Float
-    @Binding var value : Float
-    var color : Color 
+struct ProgressBar: View {
+    let value: CGFloat
+    let color: Color
+    
     var body: some View {
         Circle()
             .stroke(lineWidth: 5.0)
             .opacity(0.3)
             .foregroundColor(.yellow)
+        
         Circle()
-            .trim(from: 0.0,to: CGFloat(min(self.progress, 1.0)))
+            .trim(from: 0, to: CGFloat(value))
             .stroke(style: StrokeStyle(lineWidth: 5.0, lineCap: .round, lineJoin: .round))
             .foregroundColor(color)
-            .rotationEffect(Angle(degrees:270))
-            .animation(.easeIn(duration: 0.3),value: value)
+            .rotationEffect(Angle(degrees: 270))
     }
+}
+
+#Preview {
+    let coordiantor = SplashCoordinator(router: .init(navigationController: .init()))
+    let viewModel = SplashViewModel(coordinator: coordiantor, useCase: SplashUseCase())
+    return SplashView(viewModel: viewModel)
 }

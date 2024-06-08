@@ -28,7 +28,7 @@ final class SignupCoordinator: SignupCoordinatorProtocol {
     }
     
     func signupTapped() {
-        NextCoordinator(router: router).start()
+        SignupCoordinator(router: router).start()
     }
     
     func navigateToTerms() {

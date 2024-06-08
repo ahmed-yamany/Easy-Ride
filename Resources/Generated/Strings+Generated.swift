@@ -22,10 +22,7 @@ internal enum L10n {
   internal static let name = L10n.tr("Localizable", "name", fallback: "Name")
   /// OR
   internal static let or = L10n.tr("Localizable", "or", fallback: "OR")
-  /// Localizable.strings
-  ///   EasyRider
-  /// 
-  ///   Created by Ahmed Yamany on 14/05/2024.
+  /// privacy
   internal static let privacy = L10n.tr("Localizable", "privacy", fallback: "privacy")
   /// Privacy policy
   internal static let privacyPolicy = L10n.tr("Localizable", "privacyPolicy", fallback: "Privacy policy")
@@ -33,6 +30,11 @@ internal enum L10n {
   internal static let signin = L10n.tr("Localizable", "signin", fallback: "Sign In")
   /// Sign Up
   internal static let signup = L10n.tr("Localizable", "signup", fallback: "Sign Up")
+  /// Localizable.strings
+  ///   EasyRider
+  /// 
+  ///   Created by Ahmed Yamany on 14/05/2024.
+  internal static let skip = L10n.tr("Localizable", "skip", fallback: "Skip")
   /// terms
   internal static let terms = L10n.tr("Localizable", "terms", fallback: "terms")
   /// By signing up. you agree to the 

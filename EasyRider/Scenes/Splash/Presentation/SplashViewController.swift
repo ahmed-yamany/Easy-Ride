@@ -25,8 +25,4 @@ final class SplashViewController<ViewModel: SplashViewModelProtocol>: UIHostingC
         super.viewDidLoad()
        
     }
-    
-    func didTapped() {
-        viewModel.loginButtonTapped()
-    }
 }

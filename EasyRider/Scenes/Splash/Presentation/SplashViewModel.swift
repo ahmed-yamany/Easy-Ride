@@ -9,30 +9,55 @@ import Foundation
 
 @MainActor
 protocol SplashViewModelProtocol: ObservableObject {
-    func loginButtonTapped()
-    func getSplashData()->[SplashModel]
+    var models: [SplashModel] { get set }
+    var currentStep: Int { get set }
+    
+    func progressValue() -> CGFloat
+    func onAppear()
+    func skipTapped()
+    func nextTapped()
 }
 
 @MainActor
 final class SplashViewModel: SplashViewModelProtocol {
-    
+    @Published var models: [SplashModel] = []
+    @Published var currentStep: Int = 0
+
     let coordinator: SplashCoordinatorProtocol
+    let useCase: SplashUseCaseProtocol
     
-    private let onboardingData = [
-        SplashModel(image: "onBoarding1" , title:  "Anywhere you are", descreption: "Sell houses easily with the help of Listenoryx and to make this line big I am writing more."),
-        SplashModel(image: "onBoarding2", title: "At anytime", descreption: "Sell houses easily with the help of Listenoryx and to make this line big I am writing more."),
-        SplashModel(image: "onBoarding3", title: "Book your car", descreption: "Sell houses easily with the help of Listenoryx and to make this line big I am writing more.")
-    ]
-    
-    init(coordinator: SplashCoordinatorProtocol) {
+    init(coordinator: SplashCoordinatorProtocol, useCase: SplashUseCaseProtocol) {
         self.coordinator = coordinator
+        self.useCase = useCase
     }
     
-    func loginButtonTapped() {
+    func onAppear() {
+        Task {
+            do {
+                models = try await useCase.getSplashes()
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func progressValue() -> CGFloat {
+        if models.isEmpty {
+            return 0
+        }
+    
+        return CGFloat(currentStep + 1)/CGFloat(models.count)
+    }
+    
+    func skipTapped() {
         coordinator.navigateToLogin()
     }
     
-    func getSplashData()->[SplashModel]{
-        return onboardingData
+    func nextTapped() {
+        if currentStep < models.count - 1 {
+            currentStep += 1
+        } else {
+            skipTapped()
+        }
     }
 }
