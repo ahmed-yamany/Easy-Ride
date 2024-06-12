@@ -34,7 +34,7 @@ struct SplashView<ViewModel: SplashViewModelProtocol>: View {
             viewModel.skipTapped()
         } label: {
             Text(L10n.skip)
-                .foregroundStyle(.erContentPrimary)
+                .foregroundStyle(Asset.Colors.erContentPrimary.swiftUIColor)
                 .font(.custom(size: 16, weight: .regular))
         }
         .frame(maxWidth: .infinity, alignment: .trailing)
@@ -42,8 +42,8 @@ struct SplashView<ViewModel: SplashViewModelProtocol>: View {
     }
     
     private var tabView: some View {
-        TabView(selection: $viewModel.currentStep) {
-            ForEach(viewModel.models.indices, id: \.self) { index in
+            TabView(selection: $viewModel.currentStep) {
+                /*ForEach(viewModel.models.indices, id: \.self) { index in
                 let model = viewModel.models[index]
                 VStack(spacing: 44 ) {
                     Image(model.image)
@@ -66,14 +66,14 @@ struct SplashView<ViewModel: SplashViewModelProtocol>: View {
                 .frame(maxWidth: .infinity)
                 .padding(.horizontal, .constants.padding)
                 .tag(index)
-            }
+            }*/
         }
         .tabViewStyle(.page(indexDisplayMode: .never))
     }
     
     var progressButton: some View {
         ZStack {
-            ProgressBar(value: viewModel.progressValue(), color: Color.erPrimary)
+            ProgressBar(value: viewModel.progressValue(), color: Asset.Colors.erPrimary.swiftUIColor)
                 .frame(width: 80, height: 80)
             
             Button {
@@ -81,7 +81,7 @@ struct SplashView<ViewModel: SplashViewModelProtocol>: View {
             } label: {
                 Image(systemName: "arrow.right")
                     .frame(width: 65, height: 65, alignment: .center)
-                    .background(Color(.erPrimary))
+                    .background(Asset.Colors.erPrimary.swiftUIColor )
                     .tint(Color.gray)
                     .clipShape(Circle())
             }
@@ -109,8 +109,8 @@ struct ProgressBar: View {
     }
 }
 
-#Preview {
-    let coordiantor = SplashCoordinator(router: .init(navigationController: .init()))
-    let viewModel = SplashViewModel(coordinator: coordiantor, useCase: SplashUseCase())
-    return SplashView(viewModel: viewModel)
-}
+//#Preview {
+//    let coordiantor = SplashCoordinator(router: .init(navigationController: .init()))
+//    let viewModel = SplashViewModel(coordinator: coordiantor, useCase: SplashUseCase())
+//    return SplashView(viewModel: viewModel)
+//}

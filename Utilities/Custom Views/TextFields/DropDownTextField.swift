@@ -29,9 +29,9 @@ struct DropDownTextField<Item: CustomStringConvertible>: View {
             }
             .frame(minHeight: showDropDown ? 60 : 0)
             .frame(maxHeight: showDropDown ? 200 : 0)
-            .background(.erBackground)
+            .background(Asset.Colors.erBackground.swiftUIColor)
             .shadow(radius: 3)
-            .animation(.smooth, value: showDropDown)
+            .animation(.none, value: showDropDown)
         }
         .animation(.none, value: showDropDown)
     }

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import Combine
 @MainActor
 protocol SplashViewModelProtocol: ObservableObject {
     var models: [SplashModel] { get set }

@@ -58,7 +58,7 @@ struct SignupView<ViewModel: SignupViewModelProtocol>: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .padding(6)
-                            .foregroundStyle(.erBackground)
+                            .foregroundStyle(Asset.Colors.erBackground.swiftUIColor)
                             .background(.black)
                             .mask {
                                 Circle()
@@ -98,9 +98,9 @@ private struct ORDivider: View {
             .overlay {
                 Text(L10n.or)
                     .padding(.horizontal, 4)
-                    .background(.erBackground)
+                    .background(Asset.Colors.erBackground.swiftUIColor)
             }
-            .foregroundStyle(.erContentDisabled)
+            .foregroundStyle(Asset.Colors.erContentDisabled.swiftUIColor)
             .font(.custom(size: 12, weight: .medium))
     }
 }

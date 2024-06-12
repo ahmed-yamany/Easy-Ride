@@ -19,7 +19,7 @@ struct SocialMediaButtonStyle: ButtonStyle {
             .background {
                 RoundedRectangle(cornerRadius: 8)
                     .stroke(lineWidth: 1)
-                    .fill(.erContentSecondary.opacity(0.3))
+                    .fill(Asset.Colors.erContentSecondary.swiftUIColor.opacity(0.3))
             }
     }
 }
