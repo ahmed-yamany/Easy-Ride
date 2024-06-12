@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SplashView<ViewModel: SplashViewModelProtocol>: View {
     @ObservedObject var viewModel: ViewModel
-        
+    
     var body: some View {
         VStack {
             onBoardingView
@@ -42,8 +42,8 @@ struct SplashView<ViewModel: SplashViewModelProtocol>: View {
     }
     
     private var tabView: some View {
-            TabView(selection: $viewModel.currentStep) {
-                /*ForEach(viewModel.models.indices, id: \.self) { index in
+        TabView(selection: $viewModel.currentStep) {
+            ForEach(viewModel.models.indices, id: \.self) { index in
                 let model = viewModel.models[index]
                 VStack(spacing: 44 ) {
                     Image(model.image)
@@ -66,7 +66,7 @@ struct SplashView<ViewModel: SplashViewModelProtocol>: View {
                 .frame(maxWidth: .infinity)
                 .padding(.horizontal, .constants.padding)
                 .tag(index)
-            }*/
+            }
         }
         .tabViewStyle(.page(indexDisplayMode: .never))
     }

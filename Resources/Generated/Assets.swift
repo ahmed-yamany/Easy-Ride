@@ -34,6 +34,10 @@ internal enum Asset {
     internal static let house = ImageAsset(name: "_house")
   }
   internal enum Colors {
+    internal static let erContentDisabled = ColorAsset(name: "er-content-disabled")
+    internal static let erContentPrimary = ColorAsset(name: "er-content-primary")
+    internal static let erContentSecondary = ColorAsset(name: "er-content-secondary")
+    internal static let erContentTertiary = ColorAsset(name: "er-content-tertiary")
     internal static let erBackground = ColorAsset(name: "er-background")
     internal static let erError = ColorAsset(name: "er-error")
     internal static let erInfo = ColorAsset(name: "er-info")
@@ -41,10 +45,6 @@ internal enum Asset {
     internal static let erSecondary = ColorAsset(name: "er-secondary")
     internal static let erSuccess = ColorAsset(name: "er-success")
     internal static let erWarning = ColorAsset(name: "er-warning")
-    internal static let erContentDisabled = ColorAsset(name: "er-content-disabled")
-    internal static let erContentPrimary = ColorAsset(name: "er-content-primary")
-    internal static let erContentSecondary = ColorAsset(name: "er-content-secondary")
-    internal static let erContentTertiary = ColorAsset(name: "er-content-tertiary")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

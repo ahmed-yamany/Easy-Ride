@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TabBarView<ViewModel: TabBarViewModelProtocol>: View {
     @ObservedObject var viewModel: ViewModel
-
+    
     var body: some View {
         ZStack(alignment: .bottom) {
             TabView(selection: $viewModel.selectedItem) {
@@ -17,7 +17,7 @@ struct TabBarView<ViewModel: TabBarViewModelProtocol>: View {
                     item.view.tag(item.type)
                 }
             }
-
+            
             if viewModel.showTabBar {
                 BarView(viewModel: viewModel)
                     .transition(.move(edge: .bottom))
@@ -33,59 +33,53 @@ struct TabBarView<ViewModel: TabBarViewModelProtocol>: View {
 
 private struct BarView<ViewModel: TabBarViewModelProtocol>: View {
     @ObservedObject var viewModel: ViewModel
-
+    
     var body: some View {
-        VStack(spacing: 0) {
-            HStack(alignment: .bottom, spacing: 0) {
-                ForEach(viewModel.items, id: \.type) { item in
-                    if item.style == .polygon {
-                        PolygonBarItemView(item: item, viewModel: viewModel)
-                    } else {
-                        NormalBarItemView(item: item, viewModel: viewModel)
-                    }
+        HStack(alignment: .bottom, spacing: 0) {
+            ForEach(viewModel.items, id: \.type) { item in
+                if item.style == .polygon {
+                    PolygonBarItemView(item: item, viewModel: viewModel)
+                } else {
+                    NormalBarItemView(item: item, viewModel: viewModel)
                 }
             }
-
-            VStack {}
-                .frame(maxWidth: .infinity)
-                .padding(.bottom, ERCoordinator.shared.window?.safeAreaInsets.bottom)
-                .background(Asset.Colors.erBackground.swiftUIColor)
         }
+        .padding(.bottom, ERCoordinator.shared.window?.safeAreaInsets.bottom)
     }
 }
 
 private struct NormalBarItemView<ViewModel: TabBarViewModelProtocol>: View {
     let item: any TabBarItem
     @ObservedObject var viewModel: ViewModel
-
+    
     var body: some View {
         let isSelected = item.type == viewModel.selectedItem
         Button {
             viewModel.selectedItem = item.type
         } label: {
             VStack(spacing: 4) {
-                if isSelected {
-                    item.onSelectedImage
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 24, height: 24)
-
-                } else {
-                    item.image
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 24, height: 24)
+                Group {
+                    if isSelected {
+                        item.onSelectedImage
+                            .resizable()
+                    } else {
+                        item.image
+                            .resizable()
+                    }
                 }
-
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 24, height: 24)
+                
                 Text(item.title)
                     .font(.custom(size: 10, weight: .medium))
             }
-
+            
             .padding(.vertical, 8)
             .frame(maxWidth: .infinity)
-            .foregroundStyle(isSelected ? Color(asset: Asset.Colors.erPrimary) : Color(asset: Asset.Colors.erContentDisabled))
+            .foregroundStyle(isSelected ? Asset.Colors.erPrimary.swiftUIColor : Asset.Colors.erContentDisabled.swiftUIColor)
         }
         .frame(maxWidth: .infinity)
+        .frame(height: .constants.tabBarHeight)
         .background(Asset.Colors.erBackground.swiftUIColor)
     }
 }
@@ -93,48 +87,59 @@ private struct NormalBarItemView<ViewModel: TabBarViewModelProtocol>: View {
 private struct PolygonBarItemView<ViewModel: TabBarViewModelProtocol>: View {
     let item: any TabBarItem
     @ObservedObject var viewModel: ViewModel
-
+    
     var body: some View {
+        VStack {}
+            .frame(width: 100)
+            .frame(height: .constants.tabBarHeight)
+            .background(Asset.Colors.erBackground.swiftUIColor)
+            .overlay {
+                content
+            }
+    }
+    
+    @ViewBuilder
+    private var content: some View {
         let isSelected = item.type == viewModel.selectedItem
-        ZStack {
+        
+        Button {
+            viewModel.selectedItem = item.type
+        } label: {
             VStack {
-                ZStack(alignment: .center) {
-                    HexagonShape()
-                        .frame(width: 100, height: 100)
-                        .foregroundColor(Asset.Colors.erPrimary.swiftUIColor)
-                        .background(Asset.Colors.erBackground.swiftUIColor)
-                    
-                    Button(action: {
-                        viewModel.selectedItem = item.type
-                    } )
-                    {
-                        VStack {
-                            if isSelected {
-                                item.onSelectedImage
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 50, height: 50)
-                                    .foregroundColor(Asset.Colors.erBackground.swiftUIColor)
-                            } else {
-                                item.image
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 50, height: 50)
-                                    .foregroundColor(Asset.Colors.erBackground.swiftUIColor)
-                            }
-                        }
-                    }
-                }
+                hexagonView
                 
                 Text(item.title)
-                   
                     .font(.custom(size: 14, weight: .bold))
-                    
             }
-            .foregroundStyle(isSelected ? Color(asset: Asset.Colors.erPrimary) : Color(asset: Asset.Colors.erContentDisabled))
-            .frame(maxWidth: .infinity)
         }
-        .background(Asset.Colors.erBackground.swiftUIColor)
+        .frame(width: 100)
+        .foregroundStyle(isSelected ? Color(asset: Asset.Colors.erPrimary) : Color(asset: Asset.Colors.erContentDisabled))
+        .frame(maxWidth: .infinity)
+        .offset(y: -40)
+    }
+    
+    private var hexagonView: some View {
+        HexagonShape()
+            .foregroundColor(Asset.Colors.erPrimary.swiftUIColor)
+            .frame(height: 100)
+            .overlay {
+                starView
+            }
+    }
+    
+    @ViewBuilder
+    private var starView: some View {
+        let isSelected = item.type == viewModel.selectedItem
+        VStack {
+            if isSelected {
+                item.onSelectedImage.resizable()
+            } else {
+                item.image.resizable()
+            }
+        }
+        .aspectRatio(contentMode: .fit)
+        .frame(width: 50, height: 50)
+        .foregroundColor(Asset.Colors.erBackground.swiftUIColor)
     }
 }
 
