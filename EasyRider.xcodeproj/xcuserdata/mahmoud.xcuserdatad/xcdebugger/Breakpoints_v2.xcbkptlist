@@ -65,6 +65,21 @@
                   endingLineNumber = "36"
                   offsetFromSymbolStart = "306">
                </Location>
+               <Location
+                  uuid = "4AAE5F3C-9C0D-46FE-B099-772874122F90 - 95903f2c153f6265"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EasyRider.TabBarCoordinator.start() -&gt; ()"
+                  moduleName = "EasyRider"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mahmoud/Desktop/project/Easy-Ride/EasyRider/Scenes/TabBar/Presentation/TabBarCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "306">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -80,8 +95,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "55"
             endingLineNumber = "55"
-            landmarkName = "TabBarViewModel"
-            landmarkType = "3">
+            landmarkName = "viweWillAppear()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -96,8 +111,71 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
             endingLineNumber = "54"
-            landmarkName = "viewDidLoad()"
+            landmarkName = "viweWillAppear()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5463AF37-D176-43EE-8F3E-F26AF505970F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EasyRider/Scenes/Splash/Presentation/SplashView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "tabView"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "5463AF37-D176-43EE-8F3E-F26AF505970F - 93e13bfe8a4000d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EasyRider.SplashView.tabView.getter : some"
+                  moduleName = "EasyRider"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mahmoud/Desktop/project/Easy-Ride/EasyRider/Scenes/Splash/Presentation/SplashView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "273">
+               </Location>
+               <Location
+                  uuid = "5463AF37-D176-43EE-8F3E-F26AF505970F - 3cc0e7a4dfee1d34"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, &lt;&lt;opaque return type of SwiftUI.View.tag&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Hashable&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0&gt; in EasyRider.SplashView.tabView.getter : some"
+                  moduleName = "EasyRider"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mahmoud/Desktop/project/Easy-Ride/EasyRider/Scenes/Splash/Presentation/SplashView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "185">
+               </Location>
+               <Location
+                  uuid = "5463AF37-D176-43EE-8F3E-F26AF505970F - 3cc0e7a4dfee1d34"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Range&lt;Swift.Int&gt;, Swift.Int, &lt;&lt;opaque return type of SwiftUI.View.tag&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Hashable&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0&gt; in EasyRider.SplashView.tabView.getter : some"
+                  moduleName = "EasyRider"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mahmoud/Desktop/project/Easy-Ride/EasyRider/Scenes/Splash/Presentation/SplashView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "194">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
