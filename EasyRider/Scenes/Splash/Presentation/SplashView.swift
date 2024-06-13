@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SplashView<ViewModel: SplashViewModelProtocol>: View {
     @ObservedObject var viewModel: ViewModel
-        
+
     var body: some View {
         VStack {
             onBoardingView
@@ -21,14 +21,14 @@ struct SplashView<ViewModel: SplashViewModelProtocol>: View {
             viewModel.onAppear()
         }
     }
-    
+
     var onBoardingView: some View {
         VStack {
             skipButton
             tabView
         }
     }
-    
+
     var skipButton: some View {
         Button {
             viewModel.skipTapped()
@@ -40,48 +40,43 @@ struct SplashView<ViewModel: SplashViewModelProtocol>: View {
         .frame(maxWidth: .infinity, alignment: .trailing)
         .padding(.horizontal, 16)
     }
-    
+
     private var tabView: some View {
-            TabView(selection: $viewModel.currentStep) {
-                /*ForEach(viewModel.models.indices, id: \.self) { index in
+        TabView(selection: $viewModel.currentStep) {
+            ForEach(0 ..< viewModel.models.count, id: \.self) { index in
                 let model = viewModel.models[index]
-                VStack(spacing: 44 ) {
+                VStack(spacing: 44) {
                     Image(model.image)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(height: 220)
-                    
                     VStack(spacing: 12) {
                         Text(model.title)
-                            .multilineTextAlignment(.center)
                             .font(.custom(size: 24, weight: .regular))
-                        
                         Text(model.descreption)
-                            .multilineTextAlignment(.center)
                             .font(.custom(size: 14, weight: .regular))
-                            .padding(.horizontal, 30)
-                    }
-                    .foregroundStyle(.erContentPrimary)
-                }
-                .frame(maxWidth: .infinity)
-                .padding(.horizontal, .constants.padding)
-                .tag(index)
-            }*/
+                    }.multilineTextAlignment(.center)
+                        .foregroundStyle(Asset.Colors.erContentPrimary.swiftUIColor)
+                        .padding(CGFloat.constants.padding)
+                        .frame(maxWidth: .infinity)
+
+                }.tag(index)
+            }
         }
         .tabViewStyle(.page(indexDisplayMode: .never))
     }
-    
+
     var progressButton: some View {
         ZStack {
             ProgressBar(value: viewModel.progressValue(), color: Asset.Colors.erPrimary.swiftUIColor)
                 .frame(width: 80, height: 80)
-            
+
             Button {
                 viewModel.nextTapped()
             } label: {
                 Image(systemName: "arrow.right")
                     .frame(width: 65, height: 65, alignment: .center)
-                    .background(Asset.Colors.erPrimary.swiftUIColor )
+                    .background(Asset.Colors.erPrimary.swiftUIColor)
                     .tint(Color.gray)
                     .clipShape(Circle())
             }
@@ -94,13 +89,13 @@ struct SplashView<ViewModel: SplashViewModelProtocol>: View {
 struct ProgressBar: View {
     let value: CGFloat
     let color: Color
-    
+
     var body: some View {
         Circle()
             .stroke(lineWidth: 5.0)
             .opacity(0.3)
             .foregroundColor(.yellow)
-        
+
         Circle()
             .trim(from: 0, to: CGFloat(value))
             .stroke(style: StrokeStyle(lineWidth: 5.0, lineCap: .round, lineJoin: .round))
@@ -109,8 +104,8 @@ struct ProgressBar: View {
     }
 }
 
-//#Preview {
+// #Preview {
 //    let coordiantor = SplashCoordinator(router: .init(navigationController: .init()))
 //    let viewModel = SplashViewModel(coordinator: coordiantor, useCase: SplashUseCase())
 //    return SplashView(viewModel: viewModel)
-//}
+// }
