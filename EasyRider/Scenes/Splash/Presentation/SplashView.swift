@@ -57,12 +57,12 @@ struct SplashView<ViewModel: SplashViewModelProtocol>: View {
                             .font(.custom(size: 14, weight: .regular))
                             .padding(.horizontal, 30)
                     }
-                    .foregroundStyle(.erContentPrimary)
+                    .foregroundStyle(Asset.Colors.erContentPrimary.swiftUIColor)
                 }
-                .frame(maxWidth: .infinity)
-                .padding(.horizontal, .constants.padding)
                 .tag(index)
-            }*/
+                .padding(.horizontal, CGFloat.constants.padding)
+                .frame(maxWidth: .infinity)
+            }
         }
         .tabViewStyle(.page(indexDisplayMode: .never))
     }
