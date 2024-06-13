@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SplashView<ViewModel: SplashViewModelProtocol>: View {
     @ObservedObject var viewModel: ViewModel
-
+        
     var body: some View {
         VStack {
             onBoardingView
@@ -55,13 +55,14 @@ struct SplashView<ViewModel: SplashViewModelProtocol>: View {
                             .font(.custom(size: 24, weight: .regular))
                         Text(model.descreption)
                             .font(.custom(size: 14, weight: .regular))
-                    }.multilineTextAlignment(.center)
-                        .foregroundStyle(Asset.Colors.erContentPrimary.swiftUIColor)
-                        .padding(CGFloat.constants.padding)
-                        .frame(maxWidth: .infinity)
-
-                }.tag(index)
-            }
+                            .padding(.horizontal, 30)
+                    }
+                    .foregroundStyle(.erContentPrimary)
+                }
+                .frame(maxWidth: .infinity)
+                .padding(.horizontal, .constants.padding)
+                .tag(index)
+            }*/
         }
         .tabViewStyle(.page(indexDisplayMode: .never))
     }
