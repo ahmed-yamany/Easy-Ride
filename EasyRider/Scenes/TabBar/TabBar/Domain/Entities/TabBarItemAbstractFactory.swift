@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Coordinator
 
 @MainActor
 protocol TabBarItemAbstractFactory {
@@ -14,20 +15,12 @@ protocol TabBarItemAbstractFactory {
 
 struct HomeTabBarFactory: TabBarItemAbstractFactory {
     func make() -> any TabBarItem {
-//        let navigationContoller = UINavigationController()
-//        let router = ERRouter(navigationController: navigationContoller)
-//        let coordinator =
-        
-        let view = ScrollView {
-            LazyVStack {
-                ForEach(0..<100, id: \.self) { index in
-                    Text("hello hello hello hello hello \(index)")
-                        .onTapGesture {
-                            print("helo \(index)")
-                        }
-                }
-            }
-        }
+        let navigationContoller = UINavigationController()
+        let router = ERRouter(navigationController: navigationContoller)
+        let useCase = HomeUseCase()
+        let coordinator = HomeCoordinator(router: router)
+        let viewModel = HomeViewModel(coordinator: coordinator, useCase: useCase)
+        let view = HomeView(viewModel: viewModel)
         return HomeBarItem(view: AnyView(view))
     }
 }

@@ -36,7 +36,8 @@ final class ERCoordinator: ERCoordinatorProtocol {
     }
     
     func start() {
-       showOnboarding()
+//       showOnboarding()
+        showTabBar()
     }
     
     func showOnboarding() {

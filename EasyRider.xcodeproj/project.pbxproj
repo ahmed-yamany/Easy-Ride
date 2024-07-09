@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,8 @@
 		1EB661292C3DB0240010C380 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB661282C3DB0240010C380 /* HomeViewModel.swift */; };
 		1EB6612B2C3DB0400010C380 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB6612A2C3DB0400010C380 /* HomeView.swift */; };
 		1EC97B772BFC0782004D6A22 /* TabBarItemAbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC97B762BFC0782004D6A22 /* TabBarItemAbstractFactory.swift */; };
+		5C9B49132C3DB9510068CF63 /* Coordinator in Frameworks */ = {isa = PBXBuildFile; productRef = 5C9B49122C3DB9510068CF63 /* Coordinator */; };
+		5C9B49172C3DC46B0068CF63 /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9B49162C3DC46B0068CF63 /* HomeUseCase.swift */; };
 		E29CC2FD2BFD2B4700852935 /* SplashModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CC2FC2BFD2B4700852935 /* SplashModel.swift */; };
 		EE2132FA2C03C635007BA83C /* ERButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2132F92C03C635007BA83C /* ERButton.swift */; };
 		EE2132FC2C03D015007BA83C /* SocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2132FB2C03D015007BA83C /* SocialMediaButton.swift */; };
@@ -62,7 +64,6 @@
 		EEEE83902BF3B84C00B5E566 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEE838F2BF3B84C00B5E566 /* Assets.swift */; };
 		EEFF6C6F2BF7FD6A00FD9906 /* TermsAndCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFF6C6E2BF7FD6A00FD9906 /* TermsAndCondition.swift */; };
 		EEFF6C722BF810A800FD9906 /* Coordinator in Resources */ = {isa = PBXBuildFile; fileRef = EEFF6C702BF810A800FD9906 /* Coordinator */; };
-		EEFF6C752BF810B700FD9906 /* Coordinator in Frameworks */ = {isa = PBXBuildFile; productRef = EEFF6C742BF810B700FD9906 /* Coordinator */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		3887041F2BF64AB7006A48FE /* EasyRider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyRider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		388704202BF64AB7006A48FE /* EasyRiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyRiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		388704212BF64AB7006A48FE /* EasyRiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyRiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C9B49162C3DC46B0068CF63 /* HomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCase.swift; sourceTree = "<group>"; };
 		E29CC2FC2BFD2B4700852935 /* SplashModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashModel.swift; sourceTree = "<group>"; };
 		EE2132F92C03C635007BA83C /* ERButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERButton.swift; sourceTree = "<group>"; };
 		EE2132FB2C03D015007BA83C /* SocialMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaButton.swift; sourceTree = "<group>"; };
@@ -152,7 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEFF6C752BF810B700FD9906 /* Coordinator in Frameworks */,
+				5C9B49132C3DB9510068CF63 /* Coordinator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,12 +225,29 @@
 		1EB661232C3DAFB60010C380 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				1EB661242C3DB0050010C380 /* HomeCoordinator.swift */,
-				1EB661262C3DB0150010C380 /* HomeViewController.swift */,
-				1EB661282C3DB0240010C380 /* HomeViewModel.swift */,
-				1EB6612A2C3DB0400010C380 /* HomeView.swift */,
+				5C9B49152C3DC4490068CF63 /* Presentation */,
+				5C9B49142C3DC43B0068CF63 /* Domain */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		5C9B49142C3DC43B0068CF63 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				5C9B49162C3DC46B0068CF63 /* HomeUseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		5C9B49152C3DC4490068CF63 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				1EB6612A2C3DB0400010C380 /* HomeView.swift */,
+				1EB661262C3DB0150010C380 /* HomeViewController.swift */,
+				1EB661282C3DB0240010C380 /* HomeViewModel.swift */,
+				1EB661242C3DB0050010C380 /* HomeCoordinator.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		E29CC2FB2BFD2B2D00852935 /* Model */ = {
@@ -538,7 +557,7 @@
 			);
 			name = EasyRider;
 			packageProductDependencies = (
-				EEFF6C742BF810B700FD9906 /* Coordinator */,
+				5C9B49122C3DB9510068CF63 /* Coordinator */,
 			);
 			productName = EasyRider;
 			productReference = 3887041F2BF64AB7006A48FE /* EasyRider.app */;
@@ -614,6 +633,7 @@
 			);
 			mainGroup = EE660E3A2BEAB6CF00F89868;
 			packageReferences = (
+				5C9B49112C3DB9510068CF63 /* XCLocalSwiftPackageReference "Modules/Coordinator" */,
 			);
 			productRefGroup = EE660E3A2BEAB6CF00F89868;
 			projectDirPath = "";
@@ -730,6 +750,7 @@
 				1EB6612B2C3DB0400010C380 /* HomeView.swift in Sources */,
 				EE660E472BEAB6CF00F89868 /* AppDelegate.swift in Sources */,
 				1EB661292C3DB0240010C380 /* HomeViewModel.swift in Sources */,
+				5C9B49172C3DC46B0068CF63 /* HomeUseCase.swift in Sources */,
 				EE660E932BEAC5F500F89868 /* SplashCoordinator.swift in Sources */,
 				1E50A4D12C027FC200981F7C /* TabBarUseCase.swift in Sources */,
 				EE660E872BEAB90600F89868 /* SplashViewController.swift in Sources */,
@@ -1099,8 +1120,15 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		5C9B49112C3DB9510068CF63 /* XCLocalSwiftPackageReference "Modules/Coordinator" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Modules/Coordinator;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		EEFF6C742BF810B700FD9906 /* Coordinator */ = {
+		5C9B49122C3DB9510068CF63 /* Coordinator */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Coordinator;
 		};

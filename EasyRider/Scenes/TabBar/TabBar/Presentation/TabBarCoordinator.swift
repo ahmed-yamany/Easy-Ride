@@ -15,8 +15,6 @@ protocol TabBarCoordinatorProtocol: Coordinator {
     func viewWillApear()
     func showTabBar()
     func hideTabBar()
-    
-    func showHome()
 }
 
 final class TabBarCoordinator: TabBarCoordinatorProtocol {
@@ -53,10 +51,6 @@ final class TabBarCoordinator: TabBarCoordinatorProtocol {
     
     func hideTabBar() {
         showHideTabBar = false
-    }
-    
-    func showHome() {
-        
     }
         
 }
