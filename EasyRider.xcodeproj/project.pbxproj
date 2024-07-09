@@ -13,6 +13,10 @@
 		1E35D66B2BFBCA730088E593 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35D66A2BFBCA730088E593 /* TabBarItem.swift */; };
 		1E50A4D12C027FC200981F7C /* TabBarUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E50A4D02C027FC200981F7C /* TabBarUseCase.swift */; };
 		1E50A4D32C02850000981F7C /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E50A4D22C02850000981F7C /* TabBarCoordinator.swift */; };
+		1EB661252C3DB0050010C380 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB661242C3DB0050010C380 /* HomeCoordinator.swift */; };
+		1EB661272C3DB0150010C380 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB661262C3DB0150010C380 /* HomeViewController.swift */; };
+		1EB661292C3DB0240010C380 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB661282C3DB0240010C380 /* HomeViewModel.swift */; };
+		1EB6612B2C3DB0400010C380 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB6612A2C3DB0400010C380 /* HomeView.swift */; };
 		1EC97B772BFC0782004D6A22 /* TabBarItemAbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC97B762BFC0782004D6A22 /* TabBarItemAbstractFactory.swift */; };
 		E29CC2FD2BFD2B4700852935 /* SplashModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CC2FC2BFD2B4700852935 /* SplashModel.swift */; };
 		EE2132FA2C03C635007BA83C /* ERButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2132F92C03C635007BA83C /* ERButton.swift */; };
@@ -85,6 +89,10 @@
 		1E35D66A2BFBCA730088E593 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		1E50A4D02C027FC200981F7C /* TabBarUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarUseCase.swift; sourceTree = "<group>"; };
 		1E50A4D22C02850000981F7C /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		1EB661242C3DB0050010C380 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		1EB661262C3DB0150010C380 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1EB661282C3DB0240010C380 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1EB6612A2C3DB0400010C380 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1EC97B762BFC0782004D6A22 /* TabBarItemAbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemAbstractFactory.swift; sourceTree = "<group>"; };
 		3887041F2BF64AB7006A48FE /* EasyRider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyRider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		388704202BF64AB7006A48FE /* EasyRiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyRiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,8 +176,8 @@
 		1E35D6682BFBC7A70088E593 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				1E7F04422BFD0CE90075DA5D /* Domain */,
-				1E7F04432BFD0CFC0075DA5D /* Presentation */,
+				1EB661232C3DAFB60010C380 /* Home */,
+				1EB661222C3DAF940010C380 /* TabBar */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -201,6 +209,26 @@
 				1E50A4D22C02850000981F7C /* TabBarCoordinator.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		1EB661222C3DAF940010C380 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				1E7F04432BFD0CFC0075DA5D /* Presentation */,
+				1E7F04422BFD0CE90075DA5D /* Domain */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		1EB661232C3DAFB60010C380 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1EB661242C3DB0050010C380 /* HomeCoordinator.swift */,
+				1EB661262C3DB0150010C380 /* HomeViewController.swift */,
+				1EB661282C3DB0240010C380 /* HomeViewModel.swift */,
+				1EB6612A2C3DB0400010C380 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		E29CC2FB2BFD2B2D00852935 /* Model */ = {
@@ -686,6 +714,7 @@
 				EE2132FA2C03C635007BA83C /* ERButton.swift in Sources */,
 				EE2132FF2C03D1E2007BA83C /* CGFloat+Constants.swift in Sources */,
 				1E0413C12C03B2B200618CE5 /* TabBarViewModel.swift in Sources */,
+				1EB661252C3DB0050010C380 /* HomeCoordinator.swift in Sources */,
 				EEA320E62BF652C40026B058 /* ERTextField.swift in Sources */,
 				EEA320E82BF656450026B058 /* DropDownTextField.swift in Sources */,
 				EEEE838E2BF3B51C00B5E566 /* Strings+Generated.swift in Sources */,
@@ -698,7 +727,9 @@
 				EEFF6C6F2BF7FD6A00FD9906 /* TermsAndCondition.swift in Sources */,
 				EEB55BCA2BEEB5AA0010692E /* LoginViewController.swift in Sources */,
 				EEA320D72BF64ED10026B058 /* SignupViewController.swift in Sources */,
+				1EB6612B2C3DB0400010C380 /* HomeView.swift in Sources */,
 				EE660E472BEAB6CF00F89868 /* AppDelegate.swift in Sources */,
+				1EB661292C3DB0240010C380 /* HomeViewModel.swift in Sources */,
 				EE660E932BEAC5F500F89868 /* SplashCoordinator.swift in Sources */,
 				1E50A4D12C027FC200981F7C /* TabBarUseCase.swift in Sources */,
 				EE660E872BEAB90600F89868 /* SplashViewController.swift in Sources */,
@@ -712,6 +743,7 @@
 				EEA320D62BF64ED10026B058 /* SignupView.swift in Sources */,
 				EE660E982BEAC8F700F89868 /* Command.swift in Sources */,
 				EEB55BCB2BEEB5AA0010692E /* LoginView.swift in Sources */,
+				1EB661272C3DB0150010C380 /* HomeViewController.swift in Sources */,
 				EEA320D52BF64ED10026B058 /* SignupCoordinator.swift in Sources */,
 				EEEE837C2BF3ADD200B5E566 /* Font+Style.swift in Sources */,
 				EE660E952BEAC8DC00F89868 /* ERCoordinatorCommand.swift in Sources */,
